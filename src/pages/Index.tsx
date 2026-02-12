@@ -1,27 +1,10 @@
-import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
+import { articles } from "@/data/articles";
 import { Link } from "react-router-dom";
 
-interface Article {
-  id: string;
-  title: string;
-  slug: string;
-  created_at: string;
-}
-
 const Index = () => {
-  const [articles, setArticles] = useState<Article[]>([]);
-
-  useEffect(() => {
-    supabase
-      .from("articles")
-      .select("id, title, slug, created_at")
-      .eq("published", true)
-      .order("created_at", { ascending: false })
-      .then(({ data }) => {
-        if (data) setArticles(data);
-      });
-  }, []);
+  const publishedArticles = articles
+    .filter((a) => a.published)
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <main className="max-w-[600px] mx-auto px-6 py-12 md:py-20">
@@ -81,16 +64,13 @@ const Index = () => {
       {/* Articles */}
       <section className="mb-10">
         <h2 className="text-xl mb-4">Writing</h2>
-        {articles.length > 0 ? (
+        {publishedArticles.length > 0 ? (
           <ul className="space-y-3">
-            {articles.map((a) => (
+            {publishedArticles.map((a) => (
               <ArticleItem
-                key={a.id}
+                key={a.slug}
                 title={a.title}
-                date={new Date(a.created_at).toLocaleDateString("en-US", {
-                  month: "long",
-                  year: "numeric",
-                })}
+                date={a.date}
                 link={`/blog/${a.slug}`}
               />
             ))}
@@ -164,9 +144,9 @@ const ArticleItem = ({
   link: string;
 }) => (
   <li className="flex flex-col sm:flex-row sm:items-baseline sm:gap-3">
-    <a href={link} className="font-normal">
+    <Link to={link} className="font-normal">
       {title}
-    </a>
+    </Link>
     <span className="text-muted-foreground text-sm shrink-0">{date}</span>
   </li>
 );
