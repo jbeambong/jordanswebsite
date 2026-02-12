@@ -1,4 +1,28 @@
+import { useEffect, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { Link } from "react-router-dom";
+
+interface Article {
+  id: string;
+  title: string;
+  slug: string;
+  created_at: string;
+}
+
 const Index = () => {
+  const [articles, setArticles] = useState<Article[]>([]);
+
+  useEffect(() => {
+    supabase
+      .from("articles")
+      .select("id, title, slug, created_at")
+      .eq("published", true)
+      .order("created_at", { ascending: false })
+      .then(({ data }) => {
+        if (data) setArticles(data);
+      });
+  }, []);
+
   return (
     <main className="max-w-[600px] mx-auto px-6 py-12 md:py-20">
       {/* Header */}
@@ -10,18 +34,18 @@ const Index = () => {
       {/* About */}
       <section className="mb-10">
         <p className="mb-4">
-          Bienvenue sur mon coin d'internet. Je suis passionné par la technologie, 
-          le business et la création de choses utiles. Je crois qu'on apprend mieux 
-          en faisant, et j'essaie de toucher à tout ce qui m'intéresse.
+          Welcome to my corner of the internet. I'm passionate about technology, 
+          business and building useful things. I believe you learn best by doing, 
+          and I try to get my hands on everything that interests me.
         </p>
         <p className="mb-4">
-          Vous pouvez me contacter par{" "}
+          You can reach me by{" "}
           <a href="mailto:jordan@example.com">email</a>,
-          sur{" "}
+          on{" "}
           <a href="https://www.linkedin.com/in/jordanbeambong/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          {" "}ou sur{" "}
+          {" "}or on{" "}
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>.
@@ -32,21 +56,21 @@ const Index = () => {
 
       {/* Projects */}
       <section className="mb-10">
-        <h2 className="text-xl mb-4">Projets</h2>
+        <h2 className="text-xl mb-4">Projects</h2>
         <ul className="space-y-4">
           <ProjectItem
-            title="Projet Alpha"
-            description="Un outil pour simplifier [description]. Construit avec React et Python."
+            title="Project Alpha"
+            description="A tool to simplify [description]. Built with React and Python."
             link="#"
           />
           <ProjectItem
-            title="Projet Beta"
-            description="Application mobile qui [description]. Disponible sur iOS et Android."
+            title="Project Beta"
+            description="Mobile app that [description]. Available on iOS and Android."
             link="#"
           />
           <ProjectItem
-            title="Projet Gamma"
-            description="Side project explorant [description]. Open source."
+            title="Project Gamma"
+            description="Side project exploring [description]. Open source."
             link="#"
           />
         </ul>
@@ -56,49 +80,49 @@ const Index = () => {
 
       {/* Articles */}
       <section className="mb-10">
-        <h2 className="text-xl mb-4">Articles</h2>
-        <ul className="space-y-3">
-          <ArticleItem
-            title="Pourquoi j'ai arrêté de planifier"
-            date="Janvier 2025"
-            link="#"
-          />
-          <ArticleItem
-            title="Ce que j'ai appris en construisant mon premier SaaS"
-            date="Novembre 2024"
-            link="#"
-          />
-          <ArticleItem
-            title="Le mythe du talent naturel"
-            date="Septembre 2024"
-            link="#"
-          />
-        </ul>
+        <h2 className="text-xl mb-4">Writing</h2>
+        {articles.length > 0 ? (
+          <ul className="space-y-3">
+            {articles.map((a) => (
+              <ArticleItem
+                key={a.id}
+                title={a.title}
+                date={new Date(a.created_at).toLocaleDateString("en-US", {
+                  month: "long",
+                  year: "numeric",
+                })}
+                link={`/blog/${a.slug}`}
+              />
+            ))}
+          </ul>
+        ) : (
+          <p className="text-muted-foreground text-sm">Nothing published yet.</p>
+        )}
       </section>
 
       <hr className="my-10" />
 
       {/* Experience */}
       <section className="mb-10">
-        <h2 className="text-xl mb-4">Parcours</h2>
+        <h2 className="text-xl mb-4">Experience</h2>
         <ul className="space-y-5">
           <ExperienceItem
-            role="Poste actuel"
-            company="Entreprise X"
-            period="2023 – présent"
-            description="Description courte de ce que tu fais."
+            role="Current role"
+            company="Company X"
+            period="2023 – present"
+            description="Short description of what you do."
           />
           <ExperienceItem
-            role="Poste précédent"
-            company="Entreprise Y"
+            role="Previous role"
+            company="Company Y"
             period="2021 – 2023"
-            description="Description courte de ce que tu as fait."
+            description="Short description of what you did."
           />
           <ExperienceItem
-            role="Stage / premier poste"
-            company="Entreprise Z"
+            role="Internship / first role"
+            company="Company Z"
             period="2020 – 2021"
-            description="Description courte."
+            description="Short description."
           />
         </ul>
       </section>
