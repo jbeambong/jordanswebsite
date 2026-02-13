@@ -14,42 +14,13 @@ export type Database = {
   }
   public: {
     Tables: {
-      articles: {
-        Row: {
-          content: string
-          created_at: string
-          id: string
-          published: boolean
-          slug: string
-          title: string
-          updated_at: string
-        }
-        Insert: {
-          content?: string
-          created_at?: string
-          id?: string
-          published?: boolean
-          slug: string
-          title: string
-          updated_at?: string
-        }
-        Update: {
-          content?: string
-          created_at?: string
-          id?: string
-          published?: boolean
-          slug?: string
-          title?: string
-          updated_at?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      is_site_owner: { Args: never; Returns: boolean }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never
