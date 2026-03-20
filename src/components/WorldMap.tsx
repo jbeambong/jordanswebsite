@@ -7,17 +7,17 @@ import {
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-const VISITED_COUNTRIES: Record<string, string> = {
-  "120": "Cameroun",
-  "384": "Côte d'Ivoire",
-  "276": "Allemagne",
-  "826": "Royaume-Uni",
-  "724": "Espagne",
-  "686": "Sénégal",
-  "250": "France",
-  "056": "Belgique",
-  "332": "Haïti",
-  "214": "Rép. Dominicaine",
+const VISITED_COUNTRIES: Record<string, { en: string; fr: string }> = {
+  "120": { en: "Cameroon", fr: "Cameroun" },
+  "384": { en: "Ivory Coast", fr: "Côte d'Ivoire" },
+  "276": { en: "Germany", fr: "Allemagne" },
+  "826": { en: "United Kingdom", fr: "Royaume-Uni" },
+  "724": { en: "Spain", fr: "Espagne" },
+  "686": { en: "Senegal", fr: "Sénégal" },
+  "250": { en: "France", fr: "France" },
+  "056": { en: "Belgium", fr: "Belgique" },
+  "332": { en: "Haiti", fr: "Haïti" },
+  "214": { en: "Dominican Republic", fr: "Rép. Dominicaine" },
 };
 
 // French Guiana bounding box (approximate) to exclude from "France" highlight
