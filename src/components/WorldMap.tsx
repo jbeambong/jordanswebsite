@@ -8,20 +8,17 @@ import {
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 const VISITED_COUNTRIES: Record<string, string> = {
-  CMR: "Cameroun",
-  CIV: "Côte d'Ivoire",
-  DEU: "Allemagne",
-  GBR: "Angleterre",
-  ESP: "Espagne",
-  SEN: "Sénégal",
-  FRA: "France",
-  BEL: "Belgique",
-  HTI: "Haïti",
-  GLP: "Guadeloupe",
-  DOM: "Rép. Dominicaine",
+  "120": "Cameroun",
+  "384": "Côte d'Ivoire",
+  "276": "Allemagne",
+  "826": "Royaume-Uni",
+  "724": "Espagne",
+  "686": "Sénégal",
+  "250": "France",
+  "056": "Belgique",
+  "332": "Haïti",
+  "214": "Rép. Dominicaine",
 };
-
-const VISITED_ISO_A3 = new Set(Object.keys(VISITED_COUNTRIES));
 
 const WorldMap = memo(() => {
   const [tooltip, setTooltip] = useState("");
@@ -43,9 +40,9 @@ const WorldMap = memo(() => {
         <Geographies geography={GEO_URL}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const iso = geo.properties.ISO_A3 || geo.id;
-              const isVisited = VISITED_ISO_A3.has(iso);
-              const name = VISITED_COUNTRIES[iso];
+              const id = geo.id;
+              const isVisited = id in VISITED_COUNTRIES;
+              const name = VISITED_COUNTRIES[id];
 
               return (
                 <Geography
@@ -58,18 +55,18 @@ const WorldMap = memo(() => {
                   style={{
                     default: {
                       fill: isVisited
-                        ? "hsl(var(--primary))"
-                        : "hsl(var(--muted))",
-                      stroke: "hsl(var(--border))",
-                      strokeWidth: 0.5,
+                        ? "hsl(20, 50%, 45%)"
+                        : "hsl(40, 20%, 88%)",
+                      stroke: "hsl(40, 15%, 78%)",
+                      strokeWidth: 0.4,
                       outline: "none",
                     },
                     hover: {
                       fill: isVisited
-                        ? "hsl(var(--primary) / 0.7)"
-                        : "hsl(var(--muted) / 0.8)",
-                      stroke: "hsl(var(--border))",
-                      strokeWidth: 0.5,
+                        ? "hsl(20, 55%, 38%)"
+                        : "hsl(40, 18%, 84%)",
+                      stroke: "hsl(40, 15%, 78%)",
+                      strokeWidth: 0.4,
                       outline: "none",
                       cursor: isVisited ? "pointer" : "default",
                     },
