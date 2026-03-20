@@ -16,6 +16,10 @@ export const t = {
     recommendationsDesc: "A curated selection of books, films and series I enjoy.",
     recommendationsLink: "Browse on Notion",
 
+    music: "Music",
+    musicDesc: "Feel like chilling? Check out my Spotify playlists.",
+    musicLink: "Listen on Spotify",
+
     nothingPublished: "Nothing published yet.",
 
     // Experience
