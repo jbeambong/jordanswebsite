@@ -189,6 +189,8 @@ export const t = {
     musicDesc: "Envie de passer du bon temps ? Découvrez mes playlists Spotify.",
     musicLink: "Écouter sur Spotify",
 
+    countries: "Pays que j'ai visités / où j'ai vécu",
+
     nothingPublished: "Rien de publié pour l'instant.",
 
     exp: [
