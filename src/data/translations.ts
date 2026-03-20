@@ -163,7 +163,7 @@ export const t = {
         title: "Personal Website",
         description:
           "This minimalist site, built with React & Tailwind. A space to share my writing and experiments.",
-        link: "https://minimal-jordan-space.lovable.app",
+        link: "https://www.jordanbeambong.com",
       },
     ],
   },
