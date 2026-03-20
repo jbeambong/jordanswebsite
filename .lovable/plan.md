@@ -1,47 +1,22 @@
 
 
-# Switch to Paul Graham-style static articles
+# Ajouter une section Projects
 
-Remove the database, authentication, and admin panel. Articles will be hardcoded directly in the code as simple data, deployed with each change.
+## Constat
 
-## What changes
+Le fichier `Index.tsx` contient actuellement : About → Experience → Education → Writing → Footer. Il n'y a jamais eu de section "Projects" dans le code — la mémoire du projet la mentionne comme prévue mais elle n'a pas encore été implémentée.
 
-**Remove:**
-- `/login` page and authentication flow
-- `/admin` page and CMS
-- All database queries from the homepage and blog post page
-- The `articles` database table and RLS policies (via migration)
+## Plan
 
-**Add:**
-- A simple `src/data/articles.ts` file containing all articles as a TypeScript array (title, slug, date, content)
-- One example article to start with
+1. **Ajouter une section "Projects"** entre Education et Writing dans `Index.tsx`, en réutilisant le même style timeline Karpathy (ou un format liste simple selon ton choix).
 
-**Keep:**
-- The current clean, minimal design
-- The `/blog/:slug` route for reading articles
-- The homepage listing of articles
+2. **Contenu** : comme tu n'as pas encore partagé tes projets, deux options :
+   - Je crée la section avec du contenu placeholder que tu modifieras ensuite
+   - Tu me donnes la liste de tes projets (nom, description, lien éventuel) et je les intègre directement
 
-## How it works
+## Détails techniques
 
-1. To write a new article, you add an entry to `src/data/articles.ts`
-2. The homepage reads from that array and lists published articles
-3. The blog post page finds the article by slug and displays it
-
-## Technical details
-
-**New file: `src/data/articles.ts`**
-- Export an array of article objects: `{ title, slug, date, content, published }`
-- Content stored as plain text strings (markdown support can be added later)
-
-**Modified files:**
-- `src/pages/Index.tsx` - Import articles from the data file instead of fetching from database
-- `src/pages/BlogPost.tsx` - Look up article by slug from the data file instead of querying database
-- `src/App.tsx` - Remove Login and Admin routes
-
-**Deleted files:**
-- `src/pages/Login.tsx`
-- `src/pages/Admin.tsx`
-
-**Database migration:**
-- Drop the `articles` table, its RLS policies, and the `is_site_owner()` function
+- Modification unique de `src/pages/Index.tsx`
+- Ajout d'une nouvelle `<section>` avec `<hr>` entre Education (ligne 147) et Writing (ligne 151)
+- Réutilisation du composant `TimelineItem` existant ou création d'un composant `ProjectItem` simple (titre + description + lien)
 
