@@ -20,6 +20,8 @@ export const t = {
     musicDesc: "Feel like chilling? Check out my Spotify playlists. Be careful though : I can't vouch for my taste in music ;-)",
     musicLink: "Listen on Spotify",
 
+    countries: "Countries I visited / lived in so far",
+
     nothingPublished: "Nothing published yet.",
 
     // Experience
