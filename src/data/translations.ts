@@ -17,7 +17,7 @@ export const t = {
     recommendationsLink: "Browse on Notion",
 
     music: "Music",
-    musicDesc: "Feel like chilling? Check out my Spotify playlists.",
+    musicDesc: "Feel like chilling? Check out my Spotify playlists. Be careful though : I can't vouch for my taste in music ;-)",
     musicLink: "Listen on Spotify",
 
     nothingPublished: "Nothing published yet.",
