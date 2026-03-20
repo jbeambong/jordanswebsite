@@ -254,5 +254,29 @@ const ArticleItem = ({
     <span className="text-muted-foreground text-sm shrink-0">{date}</span>
   </li>
 );
+const ProjectItem = ({
+  title,
+  description,
+  link,
+}: {
+  title: string;
+  description: string;
+  link?: string;
+}) => (
+  <li>
+    <div className="font-semibold leading-snug">
+      {link ? (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {title}
+        </a>
+      ) : (
+        title
+      )}
+    </div>
+    <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+      {description}
+    </p>
+  </li>
+);
 
 export default Index;
