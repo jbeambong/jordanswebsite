@@ -41,7 +41,11 @@ const isInFrenchGuiana = (geo: any): boolean => {
   return false;
 };
 
-const WorldMap = memo(() => {
+interface WorldMapProps {
+  lang?: "en" | "fr";
+}
+
+const WorldMap = memo(({ lang = "en" }: WorldMapProps) => {
   const [tooltip, setTooltip] = useState("");
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
@@ -64,7 +68,7 @@ const WorldMap = memo(() => {
             geographies.map((geo) => {
               const id = geo.id;
               const isVisited = id in VISITED_COUNTRIES;
-              const name = VISITED_COUNTRIES[id];
+              const name = isVisited ? VISITED_COUNTRIES[id][lang] : "";
 
               // For France (250), check if this specific polygon is French Guiana
               const isFranceOverseas = id === "250" && isInFrenchGuiana(geo);
