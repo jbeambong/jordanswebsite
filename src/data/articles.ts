@@ -191,4 +191,42 @@ Elle possède une compétence à valeur énorme pour la société et pourtant ra
 Et c'est ce qu'il faut viser pour toucher le jackpot.`,
     published: true,
   },
+  {
+    title: "Why buying a Kindle is one of the best investments you can make",
+    slug: "why-buying-a-kindle",
+    date: "2024-06",
+    externalUrl: "https://medium.com/@jordanbeambong/why-buying-a-kindle-is-one-of-the-best-investments-you-can-make-50c1c1b3d513",
+    content: `Since the destruction of the Library of Alexandria, Africa has not regained its position as the world's library. And, to this day, the distribution circuit for books is much more limited than in Europe, where books from all horizons, from the oldest to the one released last week, can be bought in one click and arrive at your home the next day.
+
+When I lived in Cameroon, colleagues and friends often asked me to come back with books when I was away in France for a few days. When I wanted to buy a book I liked, I had to wait several months for my next rotation before I could finally stock up.
+
+The best solution I've found so far is to buy books via Amazon's Kindle.
+
+So yes, it's possible to download pdf files of books from the Web (just like mp4 files of movies and TV shows), but buying a Kindle (or other e-reader) has other advantages:
+
+• The ability to take notes and highlight passages: our brains have trouble remembering more than 10% of what we learn. And as if that weren't enough, it has a harder time remembering a completed task than an unfinished one (cf. Zeigarnik effect). For example, you're more likely to remember the fiction book you left on your bedside table than the one you finished two years ago. That's why, to make sure you don't waste time forgetting what you know about a book that took you two weeks to finish, it's a good idea to underline important passages and take notes, to capture its essence. All these annotations are saved directly on the server: they can then be retrieved and used in digital format.
+
+• Don't get bogged down: one book is fine. So are five. But when you start piling them up, moving around with books and finding space for them gets complicated. It's especially hard if you're a nomad. With Kindle, you can store hundreds of books on the device.
+
+• Reading comfort: unlike PC and smartphone screens, the Kindle's screen is dimmed, so it won't strain your eyes or expose you to blue light problems before bedtime. Ideal for getting to sleep. The Kindle's decent weight won't tire your wrist.
+
+• Access to a huge catalogue: authors have a clear interest in marketing a digital version of their book to increase their distribution potential. In fact, if you browse Amazon, you'll find that over 50% of the books you're looking for are available in digital format, no matter where you live.
+
+• Cheaper than physical versions: once a book is digitized, the marginal cost of an additional unit sold is zero for Amazon (no manufacturing costs to bear). Finally, many books already in the public domain are available for 0€.
+
+After two years of use, I conclude that the Kindle is a great device, even if nothing will replace the feeling of touching paper. On a personal note, I like to buy my fiction books in paper format and my non-fiction books on Kindle. Why do I do this? Because I know I'll always have passages to highlight in non-fiction books, whereas fiction is read primarily for the pleasure of the pen. And to better savor prose, you have to remove any obstacle between your eye and the page.
+
+To this praise, I'm going to qualify it with the constraints, a problem, and a danger.
+
+Constraints: digital means electricity, internet and online payment. You have to make sure you can charge the Kindle from time to time (it lasts several days), connect to a Wifi point to update your library and be able to pay online… However, I'm guessing that if you're reading this, you shouldn't have any major problems putting these points together (at least not the first two).
+
+For the problem, I'll be brief: how can we ensure recurrent Kindle devices' distribution in these areas?
+
+As for the danger, a little less brief, because it's a big one: that of the institution taking the liberty of modifying writers' works on the pretext that cancel culture doesn't tolerate certain passages. I read on Twitter that this possibility might exist in the future, and it's a very bad omen for freedom of expression.
+
+But in general, technology is changing the game again, and this is an incredible opportunity for Africans and other countries that suffer from this unequal distribution. It's more or less the same paradigm that crypto-currencies challenge: while crypto-currencies advocate the free circulation of wealth, the digitization of books advocates the free circulation of knowledge.
+
+The new Library of Alexandria will be digital… or it won't be.`,
+    published: true,
+  },
 ];
