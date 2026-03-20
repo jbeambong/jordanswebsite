@@ -40,9 +40,9 @@ const WorldMap = memo(() => {
         <Geographies geography={GEO_URL}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const iso = geo.properties.ISO_A3 || geo.id;
-              const isVisited = VISITED_ISO_A3.has(iso);
-              const name = VISITED_COUNTRIES[iso];
+              const id = geo.id;
+              const isVisited = id in VISITED_COUNTRIES;
+              const name = VISITED_COUNTRIES[id];
 
               return (
                 <Geography
