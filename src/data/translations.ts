@@ -183,6 +183,10 @@ export const t = {
     recommendationsDesc: "Une sélection de livres, films et séries que j'apprécie.",
     recommendationsLink: "Voir sur Notion",
 
+    music: "Musique",
+    musicDesc: "Envie de passer du bon temps ? Découvrez mes playlists Spotify.",
+    musicLink: "Écouter sur Spotify",
+
     nothingPublished: "Rien de publié pour l'instant.",
 
     exp: [
