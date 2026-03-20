@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { useState, memo, useCallback } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -20,22 +20,44 @@ const VISITED_COUNTRIES: Record<string, string> = {
   "214": "Rép. Dominicaine",
 };
 
+// French Guiana bounding box (approximate) to exclude from "France" highlight
+const isInFrenchGuiana = (geo: any): boolean => {
+  try {
+    const coords = geo.geometry?.coordinates;
+    if (!coords) return false;
+    // Check if any polygon centroid falls in South America (French Guiana area)
+    const flat = geo.geometry.type === "MultiPolygon" ? coords : [coords];
+    for (const polygon of flat) {
+      const ring = polygon[0];
+      if (!ring || ring.length === 0) continue;
+      const avgLon = ring.reduce((s: number, c: number[]) => s + c[0], 0) / ring.length;
+      const avgLat = ring.reduce((s: number, c: number[]) => s + c[1], 0) / ring.length;
+      // French Guiana is roughly at lon -53, lat 4
+      if (avgLon < -40 && avgLat < 10 && avgLat > -5) return true;
+    }
+  } catch {
+    // ignore
+  }
+  return false;
+};
+
 const WorldMap = memo(() => {
   const [tooltip, setTooltip] = useState("");
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMouse({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  }, []);
+
   return (
-    <div
-      className="relative w-full"
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        setMouse({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-      }}
-    >
+    <div className="relative w-full" onMouseMove={handleMouseMove}>
       <ComposableMap
-        projectionConfig={{ scale: 160, center: [0, 20] }}
+        projectionConfig={{ scale: 155, center: [10, 20] }}
         className="w-full h-auto"
-        style={{ maxHeight: 420 }}
+        style={{ maxHeight: 380 }}
+        width={800}
+        height={420}
       >
         <Geographies geography={GEO_URL}>
           {({ geographies }) =>
@@ -44,31 +66,35 @@ const WorldMap = memo(() => {
               const isVisited = id in VISITED_COUNTRIES;
               const name = VISITED_COUNTRIES[id];
 
+              // For France (250), check if this specific polygon is French Guiana
+              const isFranceOverseas = id === "250" && isInFrenchGuiana(geo);
+              const shouldHighlight = isVisited && !isFranceOverseas;
+
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
                   onMouseEnter={() => {
-                    if (isVisited && name) setTooltip(name);
+                    if (shouldHighlight && name) setTooltip(name);
                   }}
                   onMouseLeave={() => setTooltip("")}
                   style={{
                     default: {
-                      fill: isVisited
-                        ? "hsl(20, 50%, 45%)"
-                        : "hsl(40, 20%, 88%)",
-                      stroke: "hsl(40, 15%, 78%)",
-                      strokeWidth: 0.4,
+                      fill: shouldHighlight
+                        ? "hsl(25, 40%, 52%)"
+                        : "hsl(38, 25%, 90%)",
+                      stroke: "hsl(38, 18%, 82%)",
+                      strokeWidth: 0.3,
                       outline: "none",
                     },
                     hover: {
-                      fill: isVisited
-                        ? "hsl(20, 55%, 38%)"
-                        : "hsl(40, 18%, 84%)",
-                      stroke: "hsl(40, 15%, 78%)",
-                      strokeWidth: 0.4,
+                      fill: shouldHighlight
+                        ? "hsl(25, 45%, 44%)"
+                        : "hsl(38, 22%, 87%)",
+                      stroke: "hsl(38, 18%, 82%)",
+                      strokeWidth: 0.3,
                       outline: "none",
-                      cursor: isVisited ? "pointer" : "default",
+                      cursor: shouldHighlight ? "pointer" : "default",
                     },
                     pressed: { outline: "none" },
                   }}
@@ -81,8 +107,14 @@ const WorldMap = memo(() => {
 
       {tooltip && (
         <div
-          className="absolute bg-foreground text-background text-xs px-3 py-1.5 rounded-md pointer-events-none shadow-md z-10 -translate-x-1/2 -translate-y-full"
-          style={{ left: mouse.x, top: mouse.y - 10 }}
+          className="absolute text-xs px-2.5 py-1 rounded pointer-events-none z-10 -translate-x-1/2 -translate-y-full font-sans"
+          style={{
+            left: mouse.x,
+            top: mouse.y - 8,
+            backgroundColor: "hsl(25, 40%, 52%)",
+            color: "hsl(40, 33%, 96%)",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.12)",
+          }}
         >
           {tooltip}
         </div>
