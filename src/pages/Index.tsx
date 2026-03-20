@@ -88,6 +88,21 @@ const Index = () => {
 
       <hr className="my-10" />
 
+      {/* Recommendations */}
+      <section className="mb-10">
+        <h2 className="text-xl mb-4">{tr.recommendations}</h2>
+        <p className="text-sm mb-3">{tr.recommendationsDesc}</p>
+        <a
+          href="https://studioweka.notion.site/ee8c10a4358c4e14ae5eff9fd906a92c?v=7951b75375d14913b620145fb9241294"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {tr.recommendationsLink} →
+        </a>
+      </section>
+
+      <hr className="my-10" />
+
       {/* Articles */}
       <section className="mb-10">
         <h2 className="text-xl mb-4">{tr.writing}</h2>

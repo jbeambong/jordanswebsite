@@ -12,6 +12,9 @@ export const t = {
     education: "Education",
     projects: "Projects",
     writing: "Writing",
+    recommendations: "Recommendations",
+    recommendationsDesc: "A curated selection of books, films and series I enjoy.",
+    recommendationsLink: "Browse on Notion",
 
     nothingPublished: "Nothing published yet.",
 
@@ -172,6 +175,9 @@ export const t = {
     education: "Formation",
     projects: "Projets",
     writing: "Articles",
+    recommendations: "Recommandations",
+    recommendationsDesc: "Une sélection de livres, films et séries que j'apprécie.",
+    recommendationsLink: "Voir sur Notion",
 
     nothingPublished: "Rien de publié pour l'instant.",
 
