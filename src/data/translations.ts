@@ -175,6 +175,9 @@ export const t = {
     education: "Formation",
     projects: "Projets",
     writing: "Articles",
+    recommendations: "Recommandations",
+    recommendationsDesc: "Une sélection de livres, films et séries que j'apprécie.",
+    recommendationsLink: "Voir sur Notion",
 
     nothingPublished: "Rien de publié pour l'instant.",
 
