@@ -133,7 +133,7 @@ const Index = () => {
       <section className="mb-10">
         <h2 className="text-xl mb-2">{tr.countries}</h2>
         <Suspense fallback={<div className="h-[300px] flex items-center justify-center text-muted-foreground text-sm">Loading map…</div>}>
-          <WorldMap />
+          <WorldMap lang={lang} />
         </Suspense>
       </section>
 
