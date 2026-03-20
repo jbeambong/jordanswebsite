@@ -129,6 +129,22 @@ export const t = {
         link: "https://www.studely.com/fr/talents",
       },
       {
+        title: "Road Project — Haiti",
+        description:
+          "Oversaw admin & finance for all projects in-country, re-establishing accounting of a 42 km road project (€75M revenue, 500 people on site). Led a team of 17. Reduced accounting errors by 90%, recovering €2M in discrepancies.",
+      },
+      {
+        title: "Urban Roads Project — Cameroon",
+        description:
+          "Managed finance for a 21 km urban roads project (€31M revenue, 200 employees). Led a team of 10. Project delivered 6 months ahead of schedule, net result 9% better than forecast.",
+      },
+      {
+        title: "L'Atelier Noir",
+        description:
+          "A creative project I built with Lovable.",
+        link: "https://lateliernoir.lovable.app",
+      },
+      {
         title: "The Gamer Hall",
         description:
           "A video gaming lounge I launched in Yaoundé, Cameroon.",
@@ -139,16 +155,6 @@ export const t = {
         description:
           "This minimalist site, built with React & Tailwind. A space to share my writing and experiments.",
         link: "https://minimal-jordan-space.lovable.app",
-      },
-      {
-        title: "Blog Automation Pipeline",
-        description:
-          "An n8n-powered workflow automating blog content creation and publishing, driving +300k organic visitors.",
-      },
-      {
-        title: "Marketing Dashboards",
-        description:
-          "Power BI dashboards for tracking marketing performance, budget consumption, and social media KPIs.",
       },
     ],
   },
@@ -280,6 +286,22 @@ export const t = {
         link: "https://www.studely.com/fr/talents",
       },
       {
+        title: "Projet Routier — Haïti",
+        description:
+          "Supervision administrative et financière de tous les projets dans le pays, avec remise en place de la comptabilité d'un projet routier de 42 km (CA : 75 M€, 500 personnes sur site). Management d'une équipe de 17. Réduction de 90 % des erreurs comptables, récupération de 2 M€ d'écarts.",
+      },
+      {
+        title: "Projet de Voirie Urbaine — Cameroun",
+        description:
+          "Gestion financière d'un projet de voirie urbaine de 21 km (CA : 31 M€, 200 employés). Management d'une équipe de 10. Projet livré 6 mois en avance, résultat net supérieur de 9 % aux prévisions.",
+      },
+      {
+        title: "L'Atelier Noir",
+        description:
+          "Un projet créatif que j'ai construit avec Lovable.",
+        link: "https://lateliernoir.lovable.app",
+      },
+      {
         title: "The Gamer Hall",
         description:
           "Une salle de jeu vidéo que j'ai lancée à Yaoundé, au Cameroun.",
@@ -290,16 +312,6 @@ export const t = {
         description:
           "Ce site minimaliste, construit avec React & Tailwind. Un espace pour partager mes écrits et expériences.",
         link: "https://minimal-jordan-space.lovable.app",
-      },
-      {
-        title: "Pipeline d'Automatisation Blog",
-        description:
-          "Un workflow n8n automatisant la création et publication de contenus blog, générant +300k visiteurs organiques.",
-      },
-      {
-        title: "Tableaux de Bord Marketing",
-        description:
-          "Dashboards Power BI pour le suivi de la performance marketing, la consommation budgétaire et les KPIs réseaux sociaux.",
       },
     ],
   },
