@@ -123,10 +123,16 @@ export const t = {
     // Projects
     projects_list: [
       {
+        title: "Studely Talents",
+        description:
+          "A scholarship program I co-created, organized as a competition allowing three African students to receive up to €20,000 in funding for their first year of studies in France. I manage all aspects: selection, exam design and logistics.",
+        link: "https://www.studely.com/fr/talents",
+      },
+      {
         title: "The Gamer Hall",
         description:
           "A video gaming lounge I launched in Yaoundé, Cameroon.",
-        link: "https://www.facebook.com/thegamerhall",
+        link: "https://www.facebook.com/thegamerhall/photos?locale=fr_FR",
       },
       {
         title: "Personal Website",
