@@ -286,6 +286,22 @@ export const t = {
         link: "https://www.studely.com/fr/talents",
       },
       {
+        title: "Projet Routier — Haïti",
+        description:
+          "Supervision administrative et financière de tous les projets dans le pays, avec remise en place de la comptabilité d'un projet routier de 42 km (CA : 75 M€, 500 personnes sur site). Management d'une équipe de 17. Réduction de 90 % des erreurs comptables, récupération de 2 M€ d'écarts.",
+      },
+      {
+        title: "Projet de Voirie Urbaine — Cameroun",
+        description:
+          "Gestion financière d'un projet de voirie urbaine de 21 km (CA : 31 M€, 200 employés). Management d'une équipe de 10. Projet livré 6 mois en avance, résultat net supérieur de 9 % aux prévisions.",
+      },
+      {
+        title: "L'Atelier Noir",
+        description:
+          "Un projet créatif que j'ai construit avec Lovable.",
+        link: "https://lateliernoir.lovable.app",
+      },
+      {
         title: "The Gamer Hall",
         description:
           "Une salle de jeu vidéo que j'ai lancée à Yaoundé, au Cameroun.",
@@ -296,16 +312,6 @@ export const t = {
         description:
           "Ce site minimaliste, construit avec React & Tailwind. Un espace pour partager mes écrits et expériences.",
         link: "https://minimal-jordan-space.lovable.app",
-      },
-      {
-        title: "Pipeline d'Automatisation Blog",
-        description:
-          "Un workflow n8n automatisant la création et publication de contenus blog, générant +300k visiteurs organiques.",
-      },
-      {
-        title: "Tableaux de Bord Marketing",
-        description:
-          "Dashboards Power BI pour le suivi de la performance marketing, la consommation budgétaire et les KPIs réseaux sociaux.",
       },
     ],
   },
