@@ -129,6 +129,22 @@ export const t = {
         link: "https://www.studely.com/fr/talents",
       },
       {
+        title: "Road Project — Haiti",
+        description:
+          "Oversaw admin & finance for all projects in-country, re-establishing accounting of a 42 km road project (€75M revenue, 500 people on site). Led a team of 17. Reduced accounting errors by 90%, recovering €2M in discrepancies.",
+      },
+      {
+        title: "Urban Roads Project — Cameroon",
+        description:
+          "Managed finance for a 21 km urban roads project (€31M revenue, 200 employees). Led a team of 10. Project delivered 6 months ahead of schedule, net result 9% better than forecast.",
+      },
+      {
+        title: "L'Atelier Noir",
+        description:
+          "A creative project I built with Lovable.",
+        link: "https://lateliernoir.lovable.app",
+      },
+      {
         title: "The Gamer Hall",
         description:
           "A video gaming lounge I launched in Yaoundé, Cameroon.",
@@ -139,16 +155,6 @@ export const t = {
         description:
           "This minimalist site, built with React & Tailwind. A space to share my writing and experiments.",
         link: "https://minimal-jordan-space.lovable.app",
-      },
-      {
-        title: "Blog Automation Pipeline",
-        description:
-          "An n8n-powered workflow automating blog content creation and publishing, driving +300k organic visitors.",
-      },
-      {
-        title: "Marketing Dashboards",
-        description:
-          "Power BI dashboards for tracking marketing performance, budget consumption, and social media KPIs.",
       },
     ],
   },
