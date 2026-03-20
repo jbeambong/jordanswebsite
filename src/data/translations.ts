@@ -329,7 +329,7 @@ export const t = {
         title: "Site Personnel",
         description:
           "Ce site minimaliste, construit avec React & Tailwind. Un espace pour partager mes écrits et expériences.",
-        link: "https://minimal-jordan-space.lovable.app",
+        link: "https://www.jordanbeambong.com",
       },
     ],
   },
