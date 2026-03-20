@@ -103,6 +103,21 @@ const Index = () => {
 
       <hr className="my-10" />
 
+      {/* Music */}
+      <section className="mb-10">
+        <h2 className="text-xl mb-4">{tr.music}</h2>
+        <p className="text-sm mb-3">{tr.musicDesc}</p>
+        <a
+          href="https://open.spotify.com/user/rocketstarn8?si=373e886bf28040b1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {tr.musicLink} →
+        </a>
+      </section>
+
+      <hr className="my-10" />
+
       {/* Articles */}
       <section className="mb-10">
         <h2 className="text-xl mb-4">{tr.writing}</h2>

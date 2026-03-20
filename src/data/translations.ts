@@ -16,6 +16,10 @@ export const t = {
     recommendationsDesc: "A curated selection of books, films and series I enjoy.",
     recommendationsLink: "Browse on Notion",
 
+    music: "Music",
+    musicDesc: "Feel like chilling? Check out my Spotify playlists.",
+    musicLink: "Listen on Spotify",
+
     nothingPublished: "Nothing published yet.",
 
     // Experience
@@ -178,6 +182,10 @@ export const t = {
     recommendations: "Recommandations",
     recommendationsDesc: "Une sélection de livres, films et séries que j'apprécie.",
     recommendationsLink: "Voir sur Notion",
+
+    music: "Musique",
+    musicDesc: "Envie de passer du bon temps ? Découvrez mes playlists Spotify.",
+    musicLink: "Écouter sur Spotify",
 
     nothingPublished: "Rien de publié pour l'instant.",
 
