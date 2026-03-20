@@ -274,7 +274,7 @@ export const t = {
 
     projects_list: [
       {
-        title: "Studely Talents",
+        title: "Talents of Tomorrow",
         description:
           "Un programme de bourse que j'ai co-créé, organisé sous forme de jeu-concours permettant à trois étudiants africains de bénéficier d'un financement allant jusqu'à 20 000 € pour leur première année d'études en France. Je gère tous les aspects : sélection, création des épreuves et logistique.",
         link: "https://www.studely.com/fr/talents",
