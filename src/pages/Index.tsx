@@ -165,6 +165,11 @@ const Index = () => {
             title="Marketing Dashboards"
             description="Power BI dashboards for tracking marketing performance, budget consumption, and social media KPIs."
           />
+          <ProjectItem
+            title="The Gamer Hall"
+            description="A video gaming lounge I launched in Yaoundé, Cameroon."
+            link="https://www.facebook.com/thegamerhall"
+          />
         </ul>
       </section>
 
