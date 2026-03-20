@@ -13,7 +13,7 @@ export const t = {
     projects: "Projects",
     writing: "Writing",
     recommendations: "Recommendations",
-    recommendationsDesc: "A curated selection of books, films and series I enjoy.",
+    recommendationsDesc: "A curated selection of books, films and TV shows I enjoy (or am planning to consume).",
     recommendationsLink: "Browse on Notion",
 
     music: "Music",
