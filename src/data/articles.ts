@@ -143,4 +143,52 @@ Maintenant que j'ai défini les règles (très ironique)... eh bien, trichons !
 Et n'oubliez pas : "Nobody smart plays fair".`,
     published: true,
   },
+  {
+    title: "Faire comme tout le monde, c'est laisser de l'argent (et des opportunités) sur la table",
+    slug: "faire-comme-tout-le-monde",
+    date: "2023-08",
+    externalUrl: "https://www.linkedin.com/pulse/faire-comme-tout-le-monde-cest-laisser-de-largent-et-des-b%C3%A9a-mbong/",
+    content: `J'ai toujours aimé ce mème de Spider-Man.
+
+Il me rappelle à chaque fois à quel point nos CVs se ressemblent à la sortie de l'école.
+
+Imaginez la situation : vous venez de finir vos études supérieures en France, un Bac+5 spécialité Marketing Digital en poche. Évidemment, au début, vous êtes content de vous, content d'avoir franchi cette étape (à raison).
+
+Maintenant, vous cherchez un travail, mais très vite vous vous confrontez à la réalité du marché : il y a très peu de postes disponibles sur le marché (faible offre) et beaucoup de candidats (forte demande). Car en effet, vous n'êtes pas le seul de votre école à être sorti diplômé en Marketing Digital : 100 autres étudiants avec un profil aussi bon que le vôtre, voire plus fourni, cherchent également du travail sur votre territoire de chasse.
+
+Zoomons encore un peu plus : sur les 300 établissements dans le supérieur du pays qui délivrent ce diplôme (universités, écoles de commerce etc), on a encore 100 étudiants par établissement qui sortent avec le même diplôme que vous. Soit 30.000 étudiants. Chaque année.
+
+Et quand vous croyez que c'est terminé, c'est là que vous apprenez que les entreprises pour lesquelles vous postulez recrutent de plus en plus de profils à l'étranger, dans des pays où les salaires sont moins chers et les employés plus productifs. Disons pour la beauté du calcul que 20 pays dans le monde fournissent un vivier d'étudiants aussi bien formés qu'en France, cela fait 30.000 étudiants x 20 pays = 600.000 concurrents, qui ont littéralement "la dalle".
+
+Et quand je dis 600.000, je parle toujours d'une seule année : n'oubliez pas vos camarades des deux années précédentes, dont seulement 25% ont pu trouver un job (soit 600.000 x 2 x 75% = 900.000) ?
+
+Vous voilà donc sur le marché avec 1.499.999 profils qui vous ressemblent et qui cherchent un emploi, avec aucun moyen de vous différencier de la masse. Comment faire ? Le travail que vous savez faire, ils savent aussi le faire.
+
+Ça fait mal de le dire, mais c'est à ce moment que vous réalisez que vous êtes une commodité. Vous ne possédez pas une compétence que l'État n'a pas en grand nombre. Vous êtes remplaçable. Et pire encore, vous n'êtes pas remarquable.
+
+Longtemps, j'ai été frustré de ne pas recevoir de retours positifs (ou de retours tout court) de la part des centaines d'entreprises pour lesquelles j'avais passé du temps à rédiger CVs et lettres de motivation. Mais aujourd'hui, en me mettant à leur place, je comprends en partie ces refus (d'autres facteurs peuvent expliquer ces refus, mais on en parlera à une autre occasion) :
+
+• mon CV ressemble à des millions d'autres
+• pas d'expérience significative préalable
+• je postulais par la voie "classique"
+
+Avec ça, décrocher un job relève plus du miracle qu'autre chose.
+
+Dans son essai How to be successful, Sam Altman décrit le phénomène de mimétisme :
+
+"La plupart des gens comprennent que les entreprises ont plus de valeur si elles sont difficiles à concurrencer. C'est important et évidemment vrai. Mais cela vaut aussi pour vous en tant qu'individu. Si ce que vous faites peut être fait par quelqu'un d'autre, il finira par le faire, et pour moins cher.
+
+La meilleure façon de devenir difficile à concurrencer est de créer un effet de levier. Par exemple, vous pouvez le faire avec des relations personnelles, en construisant une marque personnelle forte, ou en devenant bon à l'intersection de plusieurs domaines différents. Il existe de nombreuses autres stratégies, mais vous devez trouver un moyen d'y parvenir.
+
+La plupart des gens font ce que font la plupart des gens qu'ils fréquentent. Ce comportement mimétique est généralement une erreur : si vous faites la même chose que tout le monde, vous ne serez pas difficile à concurrencer."
+
+Bref : il va falloir faire preuve d'ingéniosité pour vous démarquer.
+
+L'autre jour, je regardais une série coréenne, The Queenmaker. Dans la série, l'héroïne s'occupe des relations publiques des personnes les plus importantes du pays, et le fait très bien. Tellement bien d'ailleurs, qu'elle n'a aucune prospection à faire : ce sont les clients qui viennent à elle. Même quand elle est au fond du trou. Parce qu'elle est si bonne qu'elle ne leur laisse pas d'autre choix que de travailler avec elle.
+
+Elle possède une compétence à valeur énorme pour la société et pourtant rare. Ce que Naval Ravikant appelle une specific knowledge.
+
+Et c'est ce qu'il faut viser pour toucher le jackpot.`,
+    published: true,
+  },
 ];
