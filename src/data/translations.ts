@@ -1,6 +1,6 @@
 export const t = {
   en: {
-    subtitle: "Jack of all trades",
+    subtitle: "Marketing & Tech",
     aboutP1:
       "Welcome to my corner of the internet. I'm passionate about technology, business and building useful things. I believe you learn best by doing, and I try to get my hands on everything that interests me.",
     aboutP2Prefix: "You can reach me by",
@@ -13,11 +13,11 @@ export const t = {
     projects: "Projects",
     writing: "Writing",
     recommendations: "Recommendations",
-    recommendationsDesc: "A curated selection of books, films and series I enjoy.",
+    recommendationsDesc: "A curated selection of books, films and TV shows I enjoy (or am planning to consume).",
     recommendationsLink: "Browse on Notion",
 
     music: "Music",
-    musicDesc: "Feel like chilling? Check out my Spotify playlists.",
+    musicDesc: "Feel like chilling? Check out my Spotify playlists. Be careful though : I can't vouch for my taste in music ;-)",
     musicLink: "Listen on Spotify",
 
     nothingPublished: "Nothing published yet.",
