@@ -3,6 +3,7 @@ import { t } from "@/data/translations";
 import { useLang } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { Globe } from "lucide-react";
+import jordanPhoto from "@/assets/jordan-photo.png";
 
 const Index = () => {
   const { lang, toggleLang } = useLang();
@@ -27,9 +28,16 @@ const Index = () => {
       </div>
 
       {/* Header */}
-      <header className="mb-12">
-        <h1 className="text-2xl md:text-3xl mb-3">Jordan Bea Mbong</h1>
-        <p className="text-muted-foreground italic">{tr.subtitle}</p>
+      <header className="mb-12 flex items-center gap-5">
+        <img
+          src={jordanPhoto}
+          alt="Jordan Bea Mbong"
+          className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shrink-0"
+        />
+        <div>
+          <h1 className="text-2xl md:text-3xl mb-1">Jordan Bea Mbong</h1>
+          <p className="text-muted-foreground italic">{tr.subtitle}</p>
+        </div>
       </header>
 
       {/* About */}
