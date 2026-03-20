@@ -20,6 +20,8 @@ export const t = {
     musicDesc: "Feel like chilling? Check out my Spotify playlists. Be careful though : I can't vouch for my taste in music ;-)",
     musicLink: "Listen on Spotify",
 
+    countries: "Countries I visited / lived in so far",
+
     nothingPublished: "Nothing published yet.",
 
     // Experience
@@ -186,6 +188,8 @@ export const t = {
     music: "Musique",
     musicDesc: "Envie de passer du bon temps ? Découvrez mes playlists Spotify.",
     musicLink: "Écouter sur Spotify",
+
+    countries: "Pays que j'ai visités / où j'ai vécu",
 
     nothingPublished: "Rien de publié pour l'instant.",
 

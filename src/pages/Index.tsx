@@ -1,9 +1,12 @@
+import { lazy, Suspense } from "react";
 import { articles } from "@/data/articles";
 import { t } from "@/data/translations";
 import { useLang } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { Globe } from "lucide-react";
 import jordanPhoto from "@/assets/jordan-photo.png";
+
+const WorldMap = lazy(() => import("@/components/WorldMap"));
 
 const Index = () => {
   const { lang, toggleLang } = useLang();
@@ -122,6 +125,16 @@ const Index = () => {
         >
           {tr.musicLink} →
         </a>
+      </section>
+
+      <hr className="my-10" />
+
+      {/* Countries */}
+      <section className="mb-10">
+        <h2 className="text-xl mb-6">{tr.countries}</h2>
+        <Suspense fallback={<div className="h-[300px] flex items-center justify-center text-muted-foreground text-sm">Loading map…</div>}>
+          <WorldMap />
+        </Suspense>
       </section>
 
       <hr className="my-10" />
