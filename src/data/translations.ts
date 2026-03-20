@@ -1,6 +1,6 @@
 export const t = {
   en: {
-    subtitle: "Jack of all trades",
+    subtitle: "Marketing & Tech",
     aboutP1:
       "Welcome to my corner of the internet. I'm passionate about technology, business and building useful things. I believe you learn best by doing, and I try to get my hands on everything that interests me.",
     aboutP2Prefix: "You can reach me by",
