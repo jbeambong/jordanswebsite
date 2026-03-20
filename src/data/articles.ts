@@ -4,6 +4,7 @@ export interface Article {
   date: string;
   content: string;
   published: boolean;
+  externalUrl?: string;
 }
 
 export const articles: Article[] = [
