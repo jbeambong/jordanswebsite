@@ -8,20 +8,17 @@ import {
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 const VISITED_COUNTRIES: Record<string, string> = {
-  CMR: "Cameroun",
-  CIV: "Côte d'Ivoire",
-  DEU: "Allemagne",
-  GBR: "Angleterre",
-  ESP: "Espagne",
-  SEN: "Sénégal",
-  FRA: "France",
-  BEL: "Belgique",
-  HTI: "Haïti",
-  GLP: "Guadeloupe",
-  DOM: "Rép. Dominicaine",
+  "120": "Cameroun",
+  "384": "Côte d'Ivoire",
+  "276": "Allemagne",
+  "826": "Royaume-Uni",
+  "724": "Espagne",
+  "686": "Sénégal",
+  "250": "France",
+  "056": "Belgique",
+  "332": "Haïti",
+  "214": "Rép. Dominicaine",
 };
-
-const VISITED_ISO_A3 = new Set(Object.keys(VISITED_COUNTRIES));
 
 const WorldMap = memo(() => {
   const [tooltip, setTooltip] = useState("");
