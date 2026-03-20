@@ -55,18 +55,18 @@ const WorldMap = memo(() => {
                   style={{
                     default: {
                       fill: isVisited
-                        ? "hsl(var(--primary))"
-                        : "hsl(var(--muted))",
-                      stroke: "hsl(var(--border))",
-                      strokeWidth: 0.5,
+                        ? "hsl(20, 50%, 45%)"
+                        : "hsl(40, 20%, 88%)",
+                      stroke: "hsl(40, 15%, 78%)",
+                      strokeWidth: 0.4,
                       outline: "none",
                     },
                     hover: {
                       fill: isVisited
-                        ? "hsl(var(--primary) / 0.7)"
-                        : "hsl(var(--muted) / 0.8)",
-                      stroke: "hsl(var(--border))",
-                      strokeWidth: 0.5,
+                        ? "hsl(20, 55%, 38%)"
+                        : "hsl(40, 18%, 84%)",
+                      stroke: "hsl(40, 15%, 78%)",
+                      strokeWidth: 0.4,
                       outline: "none",
                       cursor: isVisited ? "pointer" : "default",
                     },
