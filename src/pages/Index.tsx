@@ -3,6 +3,7 @@ import { t } from "@/data/translations";
 import { useLang } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { Globe } from "lucide-react";
+import jordanPhoto from "@/assets/jordan-photo.png";
 
 const Index = () => {
   const { lang, toggleLang } = useLang();
