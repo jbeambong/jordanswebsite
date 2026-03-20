@@ -19,6 +19,11 @@ const BlogPost = () => {
       <Link to="/" className="text-sm text-muted-foreground underline mb-8 inline-block">← Back</Link>
       <h1 className="text-2xl md:text-3xl mb-2">{article.title}</h1>
       <p className="text-sm text-muted-foreground mb-8">{article.date}</p>
+      {article.externalUrl && (
+        <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" className="text-sm underline mb-6 inline-block">
+          Read original on LinkedIn ↗
+        </a>
+      )}
       <div className="whitespace-pre-wrap leading-relaxed">{article.content}</div>
     </main>
   );
