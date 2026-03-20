@@ -123,7 +123,7 @@ export const t = {
     // Projects
     projects_list: [
       {
-        title: "Studely Talents",
+        title: "Talents of Tomorrow",
         description:
           "A scholarship program I co-created, organized as a competition allowing three African students to receive up to €20,000 in funding for their first year of studies in France. I manage all aspects: selection, exam design and logistics.",
         link: "https://www.studely.com/fr/talents",
@@ -274,7 +274,7 @@ export const t = {
 
     projects_list: [
       {
-        title: "Studely Talents",
+        title: "Talents of Tomorrow",
         description:
           "Un programme de bourse que j'ai co-créé, organisé sous forme de jeu-concours permettant à trois étudiants africains de bénéficier d'un financement allant jusqu'à 20 000 € pour leur première année d'études en France. Je gère tous les aspects : sélection, création des épreuves et logistique.",
         link: "https://www.studely.com/fr/talents",
