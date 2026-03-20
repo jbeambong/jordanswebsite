@@ -12,6 +12,9 @@ export const t = {
     education: "Education",
     projects: "Projects",
     writing: "Writing",
+    recommendations: "Recommendations",
+    recommendationsDesc: "A curated selection of books, films and series I enjoy.",
+    recommendationsLink: "Browse on Notion",
 
     nothingPublished: "Nothing published yet.",
 
