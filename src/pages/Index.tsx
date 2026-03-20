@@ -148,6 +148,28 @@ const Index = () => {
 
       <hr className="my-10" />
 
+      {/* Projects */}
+      <section className="mb-10">
+        <h2 className="text-xl mb-6">Projects</h2>
+        <ul className="space-y-6">
+          <ProjectItem
+            title="Personal Website"
+            description="This minimalist site, built with React & Tailwind. A space to share my writing and experiments."
+            link="https://minimal-jordan-space.lovable.app"
+          />
+          <ProjectItem
+            title="Blog Automation Pipeline"
+            description="An n8n-powered workflow automating blog content creation and publishing, driving +300k organic visitors."
+          />
+          <ProjectItem
+            title="Marketing Dashboards"
+            description="Power BI dashboards for tracking marketing performance, budget consumption, and social media KPIs."
+          />
+        </ul>
+      </section>
+
+      <hr className="my-10" />
+
       {/* Articles */}
       <section className="mb-10">
         <h2 className="text-xl mb-4">Writing</h2>
