@@ -1,45 +1,16 @@
+# Ajout de la balise Metricool
 
+## Objectif
+Connecter le site à Metricool en intégrant la balise JavaScript fournie.
 
-## Problem
+## Changement prévu
+Dans `index.html`, insérer la balise Metricool juste avant la fermeture de `</head>` afin de charger le tracker sur toutes les pages.
 
-The map shows all countries in grey because the TopoJSON file (`world-atlas@2/countries-110m.json`) uses **numeric ISO 3166-1 codes** (e.g. `"120"` for Cameroon), not ISO_A3 letter codes (e.g. `"CMR"`). The current code checks for `ISO_A3` which doesn't exist in this dataset, so no country ever matches.
+## Balise à intégrer
+```html
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"3cd248a9e5dd4e6d1eb630eeaf140e9f"})});</script>
+```
 
-Additionally, the map style (grey/dark fills) doesn't match the warm, editorial design of the site.
-
-## Plan
-
-### 1. Fix country matching — use numeric ISO codes
-
-Replace the `VISITED_COUNTRIES` mapping to use numeric ISO 3166-1 codes:
-
-| Country | Numeric code |
-|---|---|
-| Cameroun | 120 |
-| Côte d'Ivoire | 384 |
-| Allemagne | 276 |
-| Angleterre (UK) | 826 |
-| Espagne | 724 |
-| Sénégal | 686 |
-| France | 250 |
-| Belgique | 056 |
-| Haïti | 332 |
-| Rép. Dominicaine | 214 |
-
-Note: Guadeloupe (GLP) is a French overseas territory and won't appear as a separate country in 110m resolution. We'll add a small note or skip it.
-
-Match using `geo.id` (which contains the numeric code as a string).
-
-### 2. Improve visual style to match the site DA
-
-- Use a softer, warmer palette: non-visited countries in a light warm beige (`hsl(40, 20%, 88%)`), visited countries in a warm terracotta/brown accent color (e.g. `hsl(20, 50%, 45%)`) that complements the Lora serif / warm background aesthetic.
-- Lighter, thinner borders.
-- Subtle hover effect on visited countries only.
-
-### 3. Tooltip on hover (already coded, will work once matching is fixed)
-
-The existing `onMouseEnter`/`onMouseLeave` + tooltip logic is correct — it will work once the ISO codes are fixed.
-
-### Files to modify
-
-- `src/components/WorldMap.tsx` — switch to numeric codes, update color palette
-
+## Vérification
+- Le script sera présent dans le `<head>` du fichier généré.
+- Aucun autre changement n'est requis côté code.
