@@ -169,7 +169,7 @@ export const t = {
   },
 
   fr: {
-    subtitle: "Touche-à-tout",
+    subtitle: "Marketing & Tech",
     aboutP1:
       "Bienvenue dans mon coin d'internet. Je suis passionné par la technologie, le business et la construction de choses utiles. Je crois qu'on apprend mieux en faisant, et j'essaie de mettre la main sur tout ce qui m'intéresse.",
     aboutP2Prefix: "Vous pouvez me contacter par",
