@@ -11,6 +11,7 @@ const VISITED_COUNTRIES: Record<string, { en: string; fr: string }> = {
   "120": { en: "Cameroon", fr: "Cameroun" },
   "384": { en: "Ivory Coast", fr: "Côte d'Ivoire" },
   "276": { en: "Germany", fr: "Allemagne" },
+  "380": { en: "Italy", fr: "Italie" },
   "826": { en: "United Kingdom", fr: "Royaume-Uni" },
   "724": { en: "Spain", fr: "Espagne" },
   "686": { en: "Senegal", fr: "Sénégal" },
