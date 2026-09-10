@@ -53,7 +53,7 @@ const Index = () => {
             LinkedIn
           </a>{" "}
           {tr.or}{" "}
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jbeambong/jbeambong.github.io" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>.
         </p>
