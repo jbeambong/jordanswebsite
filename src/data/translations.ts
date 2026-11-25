@@ -10,6 +10,11 @@ import gala10AnsImg from "@/assets/portfolio/gala-10-ans-studely.jpg";
 import welcomeFestImg from "@/assets/portfolio/welcome-fest-studely.jpg";
 import linkedinPhilippeImg from "@/assets/portfolio/linkedin-philippe-simo.jpg";
 import personalBrandCeoImg from "@/assets/portfolio/personal-brand-ceo.jpg";
+import studelyTiktokImg from "@/assets/portfolio/studely-tiktok-growth.jpg";
+import studelyFacebookImg from "@/assets/portfolio/studely-facebook-organic.jpg";
+import studelyWebsiteImg from "@/assets/portfolio/studely-website-rebuild.jpg";
+import studelyAiBlogImg from "@/assets/portfolio/studely-ai-blog-engine.jpg";
+import studelyBrandImg from "@/assets/portfolio/studely-brand-turnaround.jpg";
 
 const talentsImg = talentsAsset.url;
 const roadHaitiImg = roadHaitiAsset.url;
@@ -161,6 +166,126 @@ export const t = {
 
     // Projects
     projects_list: [
+      {
+        slug: "studely-tiktok-growth",
+        title: "From 2k to 55k TikTok Followers — and 50 DMs a Day",
+        category: "marketing",
+        image: studelyTiktokImg,
+        summary:
+          "Scaled Studely's TikTok from 2,000 to 55,000 followers (+2,650%) and turned short-form video into a daily inbound acquisition engine generating 50+ direct messages a day.",
+        meta: {
+          role: "Growth Marketing Manager",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "2k → 55k", label: "TikTok followers (+2,650%)" },
+          { value: "50+ / day", label: "Inbound direct messages generated" },
+          { value: "100% organic", label: "Audience built through social-native formats" },
+        ],
+        challenge:
+          "When I joined Studely in January 2025, TikTok sat at 2,000 followers with stiff corporate content that didn't resonate with international students preparing their move to France.",
+        approach:
+          "I shifted the editorial line to a more social, relatable tone: student-focused hooks, practical visa and life-in-France tips, behind-the-scenes moments, and fast iteration on formats that triggered comments and DMs.",
+        impact:
+          "The account grew by 2,650% to 55,000 followers and became a major organic acquisition channel, driving 50+ qualified inbound messages every day directly to the team.",
+      },
+      {
+        slug: "studely-facebook-organic",
+        title: "+45k Facebook Fans Without Spending a Cent on Ads",
+        category: "marketing",
+        image: studelyFacebookImg,
+        summary:
+          "Grew Studely's Facebook community from 60,000 to 105,000 purely organic followers (+75%) by replacing corporate announcements with content people actually want to consume.",
+        meta: {
+          role: "Growth Marketing Manager",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "60k → 105k", label: "Facebook followers (+75%)" },
+          { value: "€0 ad spend", label: "Purely organic community growth" },
+          { value: "+45k fans", label: "Net new followers added in under 20 months" },
+        ],
+        challenge:
+          "Facebook was already a key channel for Studely's audience in francophone Africa, but growth had plateaued around 60,000 followers with overly corporate posts that generated little conversation.",
+        approach:
+          "I overhauled the content policy to prioritize utility, cultural resonance, and community engagement—turning the page into a lively, helpful hub rather than a corporate bulletin board.",
+        impact:
+          "Added 45,000 purely organic followers (+75%), reaching 105,000 fans without paid promotion and strengthening everyday brand presence with prospective students and parents.",
+      },
+      {
+        slug: "studely-website-rebuild",
+        title: "Rebuilding Studely's Website: Faster, Cheaper, 2× the Traffic",
+        category: "software",
+        image: studelyWebsiteImg,
+        summary:
+          "Replaced a slow, expensive, desktop-bound website with a fast, mobile-first platform—cutting bounce rate from 60% to 38% while doubling annual visitors from 1M to 2.1M.",
+        meta: {
+          role: "Growth Marketing Manager & Project Lead",
+          organization: "Studely",
+          period: "2025",
+        },
+        highlights: [
+          { value: "1M → 2.1M", label: "Annual website visitors" },
+          { value: "60% → 38%", label: "Bounce rate reduction" },
+          { value: "Mobile-first", label: "Faster performance & lower running costs" },
+        ],
+        challenge:
+          "Studely's legacy website was slow, costly to maintain, and poorly adapted to mobile browsing—a major friction point for an international student audience mostly browsing on phones.",
+        approach:
+          "I led the rebuild around speed, mobile ergonomics, clear conversion paths, and a leaner stack that reduced maintenance costs while giving the marketing team full agility to ship pages.",
+        impact:
+          "Bounce rate dropped from 60% to 38%, annual traffic more than doubled from 1 million (2024) to 2.1 million visitors (2025), and operating costs fell significantly.",
+      },
+      {
+        slug: "studely-ai-blog-engine",
+        title: "200+ Blog Articles Written by an AI Engine We Built In-House",
+        category: "software",
+        image: studelyAiBlogImg,
+        summary:
+          "Built an internal AI editorial generator to revive a dormant blog—publishing 200+ SEO-ready articles after two years of zero content output.",
+        meta: {
+          role: "Growth Marketing Manager & Builder",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "200+ articles", label: "Published via the in-house AI engine" },
+          { value: "0 → 200+", label: "After 2 years with zero blog content" },
+          { value: "In-house", label: "Custom editorial workflow built internally" },
+        ],
+        challenge:
+          "Studely had published zero blog articles in the previous two years, leaving massive organic search demand from international students completely untapped.",
+        approach:
+          "Instead of outsourcing at high agency rates, we built an in-house AI editorial generator tailored to Studely's topics, tone, and SEO structure—allowing the team to produce, review, and publish at scale.",
+        impact:
+          "Over 200 articles went live, powering the surge in organic discovery and helping lift overall website traffic from 1 million to 2.1 million annual visitors.",
+      },
+      {
+        slug: "studely-brand-turnaround",
+        title: "Brand Turnaround: From Just Another Provider to Brand Love in 1 Year",
+        category: "marketing",
+        image: studelyBrandImg,
+        summary:
+          "Transformed Studely from a utilitarian service provider into a loved brand—growing social impressions 10×, lifting customer ratings, and driving +51% in blocked accounts sold.",
+        meta: {
+          role: "Growth Marketing Manager",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "1.2M → 11.8M", label: "Annual social media impressions" },
+          { value: "11% → 19%", label: "Conversion rate (+51% accounts sold)" },
+          { value: "4.4★ / 3.9★", label: "Google (4→4.4) & Trustpilot (3.1→3.9)" },
+        ],
+        challenge:
+          "Studely was perceived as just another administrative service provider, with mixed store reviews (4.0 on Google, 3.1 on Trustpilot), corporate communication, and an 11% conversion rate.",
+        approach:
+          "I combined a human, social-first content strategy, flagship community events (Talents de Demain, 10-year Gala, Welcome Fest), a rebuilt website, and active customer-review management to elevate every touchpoint of the brand.",
+        impact:
+          "Social impressions jumped from 1.2M to 11.8M, Google reviews climbed to 4.4 and Trustpilot to 3.9, conversion rose from 11% to 19%, and blocked accounts sold grew from 6k to 9.1k (+51%).",
+      },
       {
         slug: "gala-10-ans-studely",
         title: "Studely 10th Anniversary Gala",
@@ -431,27 +556,27 @@ export const t = {
       },
       {
         slug: "dashboard-marketing",
-        title: "Dashboard Marketing",
+        title: "Real-Time Marketing Cockpit: Every Metric and Euro Tracked",
         category: "marketing",
         image: dashboardMarketingImg,
         summary:
-          "A marketing analytics dashboard template built to centralize acquisition, retention, and revenue KPIs in one clear view.",
+          "Built a real-time marketing dashboard and a €500k annual budget tracking system to bring full data-driven discipline to the marketing department.",
         meta: {
-          role: "Creator & Growth Marketer",
-          organization: "Personal Project",
-          period: "2026",
+          role: "Growth Marketing Manager & Creator",
+          organization: "Studely",
+          period: "2025 – 2026",
         },
         highlights: [
-          { value: "All-in-one", label: "Acquisition, retention & revenue metrics" },
-          { value: "Template", label: "Ready to adapt for marketing teams" },
-          { value: "Live demo", label: "Interactive web application" },
+          { value: "Real-time", label: "Acquisition, conversion & revenue KPIs" },
+          { value: "€500k / yr", label: "Annual marketing budget tracked & controlled" },
+          { value: "Live demo", label: "Interactive web dashboard template" },
         ],
         challenge:
-          "Marketing teams often juggle scattered spreadsheets and ad platforms, making it hard to read funnel performance at a glance.",
+          "When I arrived, the department had no real-time marketing dashboard and no structured budget monitoring, making it difficult to steer a €500k annual B2C budget with consistency.",
         approach:
-          "I designed a clean, executive-ready dashboard template highlighting the metrics that actually drive growth decisions, built as a live interactive web app.",
+          "Combining my financial controlling background with growth marketing, I built a live KPI cockpit alongside a rigorous budget tracking system—then turned the dashboard architecture into a reusable interactive web template.",
         impact:
-          "Provides a ready-to-use visual reference for structuring marketing reporting and weekly growth reviews.",
+          "Enabled data-driven weekly decisions across acquisition, conversion, and spend consistency, and produced a live template any marketing team can adapt.",
         link: "https://marketingdashboardtemplate.lovable.app",
       },
     ],
@@ -596,6 +721,126 @@ export const t = {
     ],
 
     projects_list: [
+      {
+        slug: "studely-tiktok-growth",
+        title: "De 2k à 55k abonnés TikTok, et 50 messages par jour",
+        category: "marketing",
+        image: studelyTiktokImg,
+        summary:
+          "Fait passer le compte TikTok de Studely de 2 000 à 55 000 abonnés (+2 650 %) et transformé la vidéo courte en moteur d'acquisition générant plus de 50 messages entrants par jour.",
+        meta: {
+          role: "Growth Marketing Manager",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "2k → 55k", label: "Abonnés TikTok (+2 650 %)" },
+          { value: "50+ / jour", label: "Messages directs entrants générés" },
+          { value: "100 % organique", label: "Audience bâtie par des formats natifs" },
+        ],
+        challenge:
+          "À mon arrivée chez Studely en janvier 2025, le compte TikTok plafonnait à 2 000 abonnés avec un contenu trop corporate qui ne parlait pas aux étudiants internationaux préparant leur arrivée en France.",
+        approach:
+          "J'ai basculé la ligne éditoriale vers un ton plus « social » et incarné : accroches pensées pour les étudiants, conseils pratiques sur le visa et la vie en France, coulisses et itérations rapides sur les formats qui déclenchent les échanges.",
+        impact:
+          "Le compte a bondi de +2 650 % jusqu'à 55 000 abonnés et est devenu un canal d'acquisition organique majeur, générant plus de 50 messages entrants qualifiés chaque jour.",
+      },
+      {
+        slug: "studely-facebook-organic",
+        title: "+45k fans Facebook sans dépenser un centime en pub",
+        category: "marketing",
+        image: studelyFacebookImg,
+        summary:
+          "Fait grandir la communauté Facebook de Studely de 60 000 à 105 000 abonnés 100 % organiques (+75 %) en remplaçant les annonces corporate par du contenu que l'on a vraiment envie de consommer.",
+        meta: {
+          role: "Growth Marketing Manager",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "60k → 105k", label: "Abonnés Facebook (+75 %)" },
+          { value: "0 € en pub", label: "Croissance 100 % organique" },
+          { value: "+45k fans", label: "Nouveaux abonnés gagnés en moins de 20 mois" },
+        ],
+        challenge:
+          "Facebook était déjà un canal clé pour l'audience de Studely en Afrique francophone, mais la page stagnait autour de 60 000 abonnés avec des publications trop institutionnelles qui suscitaient peu d'engagement.",
+        approach:
+          "J'ai refondu la politique éditoriale pour privilégier l'utilité, la proximité culturelle et la conversation — transformant la page en véritable communauté active plutôt qu'en vitrine corporate.",
+        impact:
+          "45 000 abonnés gagnés de manière purement organique (+75 %), portant la page à 105 000 fans sans budget publicitaire et renforçant durablement la présence de marque auprès des étudiants et de leurs parents.",
+      },
+      {
+        slug: "studely-website-rebuild",
+        title: "Refonte du site Studely : plus rapide, moins cher, 2× plus de trafic",
+        category: "software",
+        image: studelyWebsiteImg,
+        summary:
+          "Remplacé un site lent, coûteux et inadapté au mobile par une plateforme rapide et mobile-first — réduisant le taux de rebond de 60 % à 38 % tout en doublant le trafic annuel de 1 M à 2,1 M de visiteurs.",
+        meta: {
+          role: "Growth Marketing Manager & Chef de Projet",
+          organization: "Studely",
+          period: "2025",
+        },
+        highlights: [
+          { value: "1 M → 2,1 M", label: "Visiteurs annuels sur le site" },
+          { value: "60 % → 38 %", label: "Baisse du taux de rebond" },
+          { value: "Mobile-first", label: "Plus rapide et moins coûteux à maintenir" },
+        ],
+        challenge:
+          "L'ancien site de Studely était lent, extrêmement cher à maintenir et totalement inadapté à la navigation mobile — un frein majeur pour une audience étudiante internationale majoritairement sur smartphone.",
+        approach:
+          "J'ai piloté la refonte autour de la vitesse, de l'ergonomie mobile, de parcours de conversion limpides et d'une architecture plus légère permettant de réduire les coûts tout en gagnant en agilité.",
+        impact:
+          "Le taux de rebond est passé de 60 % à 38 %, le trafic annuel a plus que doublé (de 1 million en 2024 à 2,1 millions en 2025) et les coûts d'exploitation ont nettement diminué.",
+      },
+      {
+        slug: "studely-ai-blog-engine",
+        title: "200+ articles de blog écrits par une IA maison",
+        category: "software",
+        image: studelyAiBlogImg,
+        summary:
+          "Conçu en interne un générateur éditorial basé sur l'IA pour relancer un blog à l'arrêt — produisant plus de 200 articles alors qu'aucun n'avait été publié depuis deux ans.",
+        meta: {
+          role: "Growth Marketing Manager & Builder",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "200+ articles", label: "Publiés via notre outil IA interne" },
+          { value: "0 → 200+", label: "Après 2 ans sans aucun article publié" },
+          { value: "Fait maison", label: "Chaîne éditoriale bâtie en interne" },
+        ],
+        challenge:
+          "Studely n'avait produit aucun article de blog au cours des deux années précédentes, laissant inexploité un énorme volume de recherches organiques d'étudiants internationaux.",
+        approach:
+          "Plutôt que d'externaliser à prix fort, nous avons construit un générateur éditorial IA en interne, calibré sur les thématiques, le ton et les exigences SEO de Studely pour produire et publier à grande échelle.",
+        impact:
+          "Plus de 200 articles mis en ligne, alimentant l'acquisition organique et contribuant à faire passer le trafic global du site de 1 million à 2,1 millions de visiteurs annuels.",
+      },
+      {
+        slug: "studely-brand-turnaround",
+        title: "D'un prestataire comme les autres à une marque qu'on adore, en 1 an",
+        category: "marketing",
+        image: studelyBrandImg,
+        summary:
+          "Transformé l'image de Studely d'un simple prestataire administratif en une marque aimée — multipliant les impressions sociales par 10, redressant les avis clients et faisant grimper les ventes de +51 %.",
+        meta: {
+          role: "Growth Marketing Manager",
+          organization: "Studely",
+          period: "2025 – 2026",
+        },
+        highlights: [
+          { value: "1,2 M → 11,8 M", label: "Impressions annuelles sur les réseaux" },
+          { value: "11 % → 19 %", label: "Taux de conversion (+51 % de comptes vendus)" },
+          { value: "4,4★ / 3,9★", label: "Avis Google (4→4,4) & Trustpilot (3,1→3,9)" },
+        ],
+        challenge:
+          "Studely était perçu comme un prestataire parmi d'autres, avec une communication corporate, des avis clients mitigés (4,0 sur Google, 3,1 sur Trustpilot) et un taux de conversion de 11 %.",
+        approach:
+          "J'ai articulé une refonte éditoriale plus humaine sur les réseaux, des événements phares (Talents de Demain, Gala des 10 ans, Welcome Fest), un nouveau site et un travail actif sur la satisfaction et les avis clients.",
+        impact:
+          "Les impressions sociales ont bondi de 1,2 M à 11,8 M, les notes Google et Trustpilot sont montées à 4,4 et 3,9, la conversion est passée de 11 % à 19 % et les comptes bloqués vendus ont progressé de 6k à 9,1k (+51 %).",
+      },
       {
         slug: "gala-10-ans-studely",
         title: "Gala des 10 Ans Studely",
@@ -866,27 +1111,27 @@ export const t = {
       },
       {
         slug: "dashboard-marketing",
-        title: "Dashboard Marketing",
+        title: "Un cockpit marketing en temps réel : chaque indicateur et chaque euro suivis",
         category: "marketing",
         image: dashboardMarketingImg,
         summary:
-          "Un modèle de tableau de bord marketing conçu pour centraliser les indicateurs d'acquisition, de rétention et de revenus au même endroit.",
+          "Mis en place un tableau de bord marketing en temps réel et un système de suivi d'un budget annuel de 500 k€ pour piloter le département par la donnée.",
         meta: {
-          role: "Créateur & Growth Marketer",
-          organization: "Projet personnel",
-          period: "2026",
+          role: "Growth Marketing Manager & Créateur",
+          organization: "Studely",
+          period: "2025 – 2026",
         },
         highlights: [
-          { value: "Tout-en-un", label: "Acquisition, rétention & revenus" },
-          { value: "Modèle", label: "Prêt à être adapté par des équipes marketing" },
-          { value: "Démo live", label: "Application web interactive" },
+          { value: "Temps réel", label: "Indicateurs d'acquisition, conversion & revenus" },
+          { value: "500 k€ / an", label: "Budget marketing annuel suivi et maîtrisé" },
+          { value: "Démo live", label: "Application web interactive réutilisable" },
         ],
         challenge:
-          "Les équipes marketing jonglent souvent entre plusieurs tableurs et plateformes publicitaires, ce qui rend difficile la lecture rapide de la performance globale du funnel.",
+          "À mon arrivée, le département ne disposait ni d'outil de pilotage en temps réel ni de suivi budgétaire structuré, rendant difficile la gestion cohérente d'un budget annuel B2C de 500 k€.",
         approach:
-          "J'ai conçu un modèle de tableau de bord clair et orienté décision, mettant en avant les indicateurs clés de croissance dans une interface web interactive.",
+          "En croisant mon passé de contrôleur de gestion avec le growth marketing, j'ai construit un tableau de bord KPI en temps réel couplé à un suivi budgétaire rigoureux — puis décliné le dashboard en modèle web interactif.",
         impact:
-          "Offre une base visuelle immédiatement exploitable pour structurer son reporting marketing et ses points hebdomadaires.",
+          "A instauré une prise de décision pilotée par la donnée sur l'acquisition, la conversion et la tenue du budget, tout en offrant un modèle live directement exploitable.",
         link: "https://marketingdashboardtemplate.lovable.app",
       },
     ],
