@@ -59,6 +59,8 @@
     --tag-software-fg: 215 50% 32%;
     --tag-esport-bg: 270 45% 90%;
     --tag-esport-fg: 270 40% 35%;
+    --tag-events-bg: 150 45% 88%;
+    --tag-events-fg: 150 45% 26%;
 
     --shadow-soft: 0 1px 2px hsl(0 0% 13% / 0.04), 0 8px 24px -12px hsl(0 0% 13% / 0.12);
     --shadow-soft-hover: 0 2px 4px hsl(0 0% 13% / 0.05), 0 16px 32px -12px hsl(0 0% 13% / 0.18);
