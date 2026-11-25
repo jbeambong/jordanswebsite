@@ -3,6 +3,7 @@ import {
   ComposableMap,
   Geographies,
   Geography,
+  Marker,
 } from "react-simple-maps";
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -19,7 +20,12 @@ const VISITED_COUNTRIES: Record<string, { en: string; fr: string }> = {
   "056": { en: "Belgium", fr: "Belgique" },
   "332": { en: "Haiti", fr: "Haïti" },
   "214": { en: "Dominican Republic", fr: "Rép. Dominicaine" },
+  "312": { en: "Guadeloupe", fr: "Guadeloupe" },
 };
+
+const VISITED_MARKERS: Array<{ id: string; coordinates: [number, number]; name: { en: string; fr: string } }> = [
+  { id: "guadeloupe", coordinates: [-61.551, 16.265], name: { en: "Guadeloupe", fr: "Guadeloupe" } },
+];
 
 // French Guiana bounding box (approximate) to exclude from "France" highlight
 const isInFrenchGuiana = (geo: any): boolean => {
@@ -108,6 +114,22 @@ const WorldMap = memo(({ lang = "en" }: WorldMapProps) => {
             })
           }
         </Geographies>
+        {VISITED_MARKERS.map((marker) => (
+          <Marker
+            key={marker.id}
+            coordinates={marker.coordinates}
+            onMouseEnter={() => setTooltip(marker.name[lang])}
+            onMouseLeave={() => setTooltip("")}
+          >
+            <circle
+              r={3.5}
+              fill="hsl(25, 40%, 52%)"
+              stroke="hsl(40, 33%, 96%)"
+              strokeWidth={0.8}
+              style={{ cursor: "pointer" }}
+            />
+          </Marker>
+        ))}
       </ComposableMap>
 
       {tooltip && (

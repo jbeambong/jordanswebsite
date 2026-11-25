@@ -1,16 +1,31 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import { articles } from "@/data/articles";
 import { t } from "@/data/translations";
 import { useLang } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { Globe } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import jordanPhoto from "@/assets/jordan-photo.png";
 
 const WorldMap = lazy(() => import("@/components/WorldMap"));
 
+interface PortfolioProject {
+  title: string;
+  image: string;
+  description: string;
+  link?: string;
+}
+
 const Index = () => {
   const { lang, toggleLang } = useLang();
   const tr = t[lang];
+  const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
 
   const publishedArticles = articles
     .filter((a) => a.published)
@@ -53,7 +68,7 @@ const Index = () => {
             LinkedIn
           </a>{" "}
           {tr.or}{" "}
-          <a href="https://github.com/jbeambong/jbeambong.github.io" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jbeambong" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>.
         </p>
@@ -87,14 +102,64 @@ const Index = () => {
 
       <hr className="my-10" />
 
-      {/* Projects */}
+      {/* Portfolio */}
       <section className="mb-10">
         <h2 className="text-xl mb-6">{tr.projects}</h2>
-        <ul className="space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {tr.projects_list.map((item, i) => (
-            <ProjectItem key={i} {...item} />
+            <button
+              key={i}
+              type="button"
+              onClick={() => setSelectedProject(item)}
+              className="group text-left rounded-md overflow-hidden border border-border bg-card transition-colors hover:border-foreground/40 focus:outline-none focus:ring-2 focus:ring-ring"
+            >
+              <div className="aspect-[3/2] w-full overflow-hidden bg-muted">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  width={992}
+                  height={672}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-3">
+                <div className="text-sm font-semibold leading-snug">{item.title}</div>
+              </div>
+            </button>
           ))}
-        </ul>
+        </div>
+
+        <Dialog open={selectedProject !== null} onOpenChange={(open) => !open && setSelectedProject(null)}>
+          <DialogContent className="sm:max-w-lg">
+            {selectedProject && (
+              <>
+                <div className="aspect-[3/2] w-full overflow-hidden rounded-md bg-muted mt-2">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    width={992}
+                    height={672}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <DialogHeader>
+                  <DialogTitle>{selectedProject.title}</DialogTitle>
+                  <DialogDescription className="text-foreground/80 leading-relaxed pt-2">
+                    {selectedProject.description}
+                  </DialogDescription>
+                </DialogHeader>
+                {selectedProject.link && (
+                  <div className="pt-2">
+                    <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="text-sm">
+                      {tr.viewProject} →
+                    </a>
+                  </div>
+                )}
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
       </section>
 
       <hr className="my-10" />
@@ -202,21 +267,6 @@ const ArticleItem = ({ title, date, link }: { title: string; date: string; link:
       {title}
     </Link>
     <span className="text-muted-foreground text-sm shrink-0">{date}</span>
-  </li>
-);
-
-const ProjectItem = ({ title, description, link }: { title: string; description: string; link?: string }) => (
-  <li>
-    <div className="font-semibold leading-snug">
-      {link ? (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          {title}
-        </a>
-      ) : (
-        title
-      )}
-    </div>
-    <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{description}</p>
   </li>
 );
 
