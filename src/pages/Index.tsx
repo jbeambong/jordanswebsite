@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { ChevronDown, Globe } from "lucide-react";
 import jordanPhoto from "@/assets/jordan-photo.png";
 import { CATEGORY_META, CategoryTag, type ProjectCategory } from "@/components/CategoryTag";
+import { SocialLinks } from "@/components/SocialLinks";
 
 const Index = () => {
   const { lang, toggleLang } = useLang();
@@ -47,6 +48,7 @@ const Index = () => {
         <div>
           <h1 className="text-2xl md:text-3xl mb-1">Jordan Bea Mbong</h1>
           <p className="text-muted-foreground italic">{tr.subtitle}</p>
+          <SocialLinks className="mt-2.5" />
         </div>
       </header>
 

@@ -7,7 +7,7 @@ import personalWebsiteImg from "@/assets/portfolio/personal-website.jpg";
 import dashboardMarketingAsset from "@/assets/dashboard-marketing.png.asset.json";
 import fete1erMaiAsset from "@/assets/fete-1er-mai-razel.jpg.asset.json";
 import gala10AnsImg from "@/assets/portfolio/gala-10-ans-studely.jpg";
-import welcomeFestImg from "@/assets/portfolio/welcome-fest-studely.jpg";
+import welcomeFestAsset from "@/assets/welcome-fest-studely.jpg.asset.json";
 import linkedinPhilippeImg from "@/assets/portfolio/linkedin-philippe-simo.jpg";
 import personalBrandCeoImg from "@/assets/portfolio/personal-brand-ceo.jpg";
 import studelyTiktokImg from "@/assets/portfolio/studely-tiktok-growth.jpg";
@@ -22,6 +22,7 @@ const urbanRoadsCameroonImg = urbanRoadsCameroonAsset.url;
 const gamerHallImg = gamerHallAsset.url;
 const dashboardMarketingImg = dashboardMarketingAsset.url;
 const fete1erMaiImg = fete1erMaiAsset.url;
+const welcomeFestImg = welcomeFestAsset.url;
 
 export const t = {
   en: {
