@@ -1,13 +1,16 @@
-import talentsImg from "@/assets/portfolio/talents-of-tomorrow.jpg";
+import talentsAsset from "@/assets/talents-of-tomorrow.jpg.asset.json";
 import roadHaitiAsset from "@/assets/road-project-haiti.jpeg.asset.json";
 import urbanRoadsCameroonAsset from "@/assets/urban-roads-cameroon.jpeg.asset.json";
 import atelierNoirImg from "@/assets/portfolio/atelier-noir.jpg";
 import gamerHallAsset from "@/assets/gamer-hall.jpg.asset.json";
 import personalWebsiteImg from "@/assets/portfolio/personal-website.jpg";
+import dashboardMarketingAsset from "@/assets/dashboard-marketing.png.asset.json";
 
+const talentsImg = talentsAsset.url;
 const roadHaitiImg = roadHaitiAsset.url;
 const urbanRoadsCameroonImg = urbanRoadsCameroonAsset.url;
 const gamerHallImg = gamerHallAsset.url;
+const dashboardMarketingImg = dashboardMarketingAsset.url;
 
 export const t = {
   en: {
@@ -22,6 +25,7 @@ export const t = {
     experience: "Experience",
     education: "Education",
     projects: "Portfolio",
+    allCategories: "All",
     viewProject: "Visit project",
     writing: "Writing",
     recommendations: "Recommendations",
@@ -189,6 +193,14 @@ export const t = {
           "This minimalist site, built with React & Tailwind. A space to share my writing and experiments.",
         link: "https://www.jordanbeambong.com",
       },
+      {
+        title: "Dashboard Marketing",
+        category: "marketing",
+        image: dashboardMarketingImg,
+        description:
+          "A marketing analytics dashboard template to track key acquisition, retention and revenue metrics in one place. Available at https://marketingdashboardtemplate.lovable.app",
+        link: "https://marketingdashboardtemplate.lovable.app",
+      },
     ],
   },
 
@@ -204,6 +216,7 @@ export const t = {
     experience: "Expérience",
     education: "Formation",
     projects: "Portfolio",
+    allCategories: "Tous",
     viewProject: "Voir le projet",
     writing: "Articles",
     recommendations: "Recommandations",
@@ -367,6 +380,14 @@ export const t = {
         description:
           "Ce site minimaliste, construit avec React & Tailwind. Un espace pour partager mes écrits et expériences.",
         link: "https://www.jordanbeambong.com",
+      },
+      {
+        title: "Dashboard Marketing",
+        category: "marketing",
+        image: dashboardMarketingImg,
+        description:
+          "Un modèle de tableau de bord marketing pour suivre les principaux indicateurs d'acquisition, de rétention et de revenus au même endroit. Accessible sur https://marketingdashboardtemplate.lovable.app",
+        link: "https://marketingdashboardtemplate.lovable.app",
       },
     ],
   },

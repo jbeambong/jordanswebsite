@@ -1,9 +1,9 @@
-import { lazy, Suspense, useState } from "react";
+import { useState } from "react";
 import { articles } from "@/data/articles";
 import { t } from "@/data/translations";
 import { useLang } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
-import { Globe } from "lucide-react";
+import { ChevronDown, Globe } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -12,8 +12,6 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import jordanPhoto from "@/assets/jordan-photo.png";
-
-const WorldMap = lazy(() => import("@/components/WorldMap"));
 
 interface PortfolioProject {
   title: string;
@@ -46,10 +44,18 @@ const Index = () => {
   const { lang, toggleLang } = useLang();
   const tr = t[lang];
   const [selectedProject, setSelectedProject] = useState<PortfolioProject | null>(null);
+  const [activeCategory, setActiveCategory] = useState<"all" | PortfolioProject["category"]>("all");
+  const [expOpen, setExpOpen] = useState(false);
+  const [eduOpen, setEduOpen] = useState(false);
 
   const publishedArticles = articles
     .filter((a) => a.published)
     .sort((a, b) => b.date.localeCompare(a.date));
+
+  const filteredProjects =
+    activeCategory === "all"
+      ? tr.projects_list
+      : tr.projects_list.filter((item) => item.category === activeCategory);
 
   return (
     <main className="max-w-[700px] mx-auto px-6 py-12 md:py-20">
@@ -98,42 +104,100 @@ const Index = () => {
 
       {/* Experience */}
       <section className="mb-10">
-        <h2 className="text-xl mb-6">{tr.experience}</h2>
-        <div className="relative">
-          <div className="absolute left-[90px] top-0 bottom-0 w-px bg-border hidden sm:block" />
-          {tr.exp.map((item, i) => (
-            <TimelineItem key={i} {...item} />
-          ))}
-        </div>
+        <button
+          type="button"
+          onClick={() => setExpOpen((prev) => !prev)}
+          aria-expanded={expOpen}
+          className="w-full flex items-center justify-between text-left group"
+        >
+          <h2 className="text-xl">{tr.experience}</h2>
+          <ChevronDown
+            className={`w-5 h-5 text-muted-foreground transition-transform duration-200 group-hover:text-foreground ${
+              expOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+        {expOpen && (
+          <div className="relative mt-6">
+            <div className="absolute left-[90px] top-0 bottom-0 w-px bg-border hidden sm:block" />
+            {tr.exp.map((item, i) => (
+              <TimelineItem key={i} {...item} />
+            ))}
+          </div>
+        )}
       </section>
 
       <hr className="my-10" />
 
       {/* Education */}
       <section className="mb-10">
-        <h2 className="text-xl mb-6">{tr.education}</h2>
-        <div className="relative">
-          <div className="absolute left-[90px] top-0 bottom-0 w-px bg-border hidden sm:block" />
-          {tr.edu.map((item, i) => (
-            <TimelineItem key={i} {...item} />
-          ))}
-        </div>
+        <button
+          type="button"
+          onClick={() => setEduOpen((prev) => !prev)}
+          aria-expanded={eduOpen}
+          className="w-full flex items-center justify-between text-left group"
+        >
+          <h2 className="text-xl">{tr.education}</h2>
+          <ChevronDown
+            className={`w-5 h-5 text-muted-foreground transition-transform duration-200 group-hover:text-foreground ${
+              eduOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+        {eduOpen && (
+          <div className="relative mt-6">
+            <div className="absolute left-[90px] top-0 bottom-0 w-px bg-border hidden sm:block" />
+            {tr.edu.map((item, i) => (
+              <TimelineItem key={i} {...item} />
+            ))}
+          </div>
+        )}
       </section>
 
       <hr className="my-10" />
 
       {/* Portfolio */}
       <section className="mb-10">
-        <h2 className="text-xl mb-6">{tr.projects}</h2>
+        <h2 className="text-xl mb-4">{tr.projects}</h2>
+        <div className="flex flex-wrap gap-2 mb-6" style={{ fontFamily: "var(--font-sans)" }}>
+          <button
+            type="button"
+            onClick={() => setActiveCategory("all")}
+            className={`text-xs font-medium px-3 py-1.5 rounded-full transition-colors ${
+              activeCategory === "all"
+                ? "bg-foreground text-background"
+                : "bg-secondary text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            {tr.allCategories}
+          </button>
+          {(Object.keys(CATEGORY_META) as PortfolioProject["category"][]).map((cat) => {
+            const isActive = activeCategory === cat;
+            return (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setActiveCategory(cat)}
+                className={`text-xs font-medium px-3 py-1.5 rounded-full transition-colors ${
+                  isActive
+                    ? "bg-foreground text-background"
+                    : "bg-secondary text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {CATEGORY_META[cat].label}
+              </button>
+            );
+          })}
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-          {tr.projects_list.map((item, i) => (
+          {filteredProjects.map((item, i) => (
             <button
               key={i}
               type="button"
               onClick={() => setSelectedProject(item)}
-              className="group text-left rounded-2xl overflow-hidden bg-card transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-ring shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-soft-hover)]"
+              className="group text-left rounded-2xl p-2 bg-card transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-ring shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-soft-hover)]"
             >
-              <div className="aspect-[3/2] w-full overflow-hidden bg-muted">
+              <div className="aspect-[3/2] w-full overflow-hidden rounded-xl bg-muted">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -143,7 +207,7 @@ const Index = () => {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-3.5 space-y-2">
+              <div className="px-1.5 pt-3 pb-1.5 space-y-2">
                 <div className="text-sm font-semibold leading-snug">{item.title}</div>
                 <CategoryTag category={item.category} />
               </div>
@@ -155,7 +219,7 @@ const Index = () => {
           <DialogContent className="sm:max-w-lg">
             {selectedProject && (
               <>
-                <div className="aspect-[3/2] w-full overflow-hidden rounded-md bg-muted mt-2">
+                <div className="aspect-[3/2] w-full overflow-hidden rounded-xl bg-muted mt-2">
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
@@ -214,16 +278,6 @@ const Index = () => {
         >
           {tr.musicLink} →
         </a>
-      </section>
-
-      <hr className="my-10" />
-
-      {/* Countries */}
-      <section className="mb-10">
-        <h2 className="text-xl mb-2">{tr.countries}</h2>
-        <Suspense fallback={<div className="h-[300px] flex items-center justify-center text-muted-foreground text-sm">Loading map…</div>}>
-          <WorldMap lang={lang} />
-        </Suspense>
       </section>
 
       <hr className="my-10" />
