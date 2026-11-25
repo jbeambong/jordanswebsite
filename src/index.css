@@ -49,6 +49,19 @@
     --font-sans: 'Source Sans 3', system-ui, sans-serif;
 
     --link: 210 70% 40%;
+
+    /* Notion-style pastel tags */
+    --tag-marketing-bg: 45 80% 88%;
+    --tag-marketing-fg: 35 60% 28%;
+    --tag-infra-bg: 25 70% 88%;
+    --tag-infra-fg: 20 55% 30%;
+    --tag-software-bg: 210 60% 88%;
+    --tag-software-fg: 215 50% 32%;
+    --tag-esport-bg: 270 45% 90%;
+    --tag-esport-fg: 270 40% 35%;
+
+    --shadow-soft: 0 1px 2px hsl(0 0% 13% / 0.04), 0 8px 24px -12px hsl(0 0% 13% / 0.12);
+    --shadow-soft-hover: 0 2px 4px hsl(0 0% 13% / 0.05), 0 16px 32px -12px hsl(0 0% 13% / 0.18);
   }
 }
 

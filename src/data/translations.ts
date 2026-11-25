@@ -1,9 +1,13 @@
 import talentsImg from "@/assets/portfolio/talents-of-tomorrow.jpg";
-import roadHaitiImg from "@/assets/portfolio/road-haiti.jpg";
-import urbanRoadsCameroonImg from "@/assets/portfolio/urban-roads-cameroon.jpg";
+import roadHaitiAsset from "@/assets/road-project-haiti.jpeg.asset.json";
+import urbanRoadsCameroonAsset from "@/assets/urban-roads-cameroon.jpeg.asset.json";
 import atelierNoirImg from "@/assets/portfolio/atelier-noir.jpg";
-import gamerHallImg from "@/assets/portfolio/gamer-hall.jpg";
+import gamerHallAsset from "@/assets/gamer-hall.jpg.asset.json";
 import personalWebsiteImg from "@/assets/portfolio/personal-website.jpg";
+
+const roadHaitiImg = roadHaitiAsset.url;
+const urbanRoadsCameroonImg = urbanRoadsCameroonAsset.url;
+const gamerHallImg = gamerHallAsset.url;
 
 export const t = {
   en: {
@@ -141,6 +145,7 @@ export const t = {
     projects_list: [
       {
         title: "Talents of Tomorrow",
+        category: "marketing",
         image: talentsImg,
         description:
           "A scholarship program I co-created, organized as a competition allowing three African students to receive up to €20,000 in funding for their first year of studies in France. I manage all aspects: selection, exam design and logistics.",
@@ -148,18 +153,21 @@ export const t = {
       },
       {
         title: "Road Project — Haiti",
+        category: "infra",
         image: roadHaitiImg,
         description:
           "Oversaw admin & finance for all projects in-country, re-establishing accounting of a 42 km road project (€75M revenue, 500 people on site). Led a team of 17. Reduced accounting errors by 90%, recovering €2M in discrepancies.",
       },
       {
         title: "Urban Roads Project — Cameroon",
+        category: "infra",
         image: urbanRoadsCameroonImg,
         description:
           "Managed finance for a 21 km urban roads project (€31M revenue, 200 employees). Led a team of 10. Project delivered 6 months ahead of schedule, net result 9% better than forecast.",
       },
       {
         title: "L'Atelier Noir",
+        category: "software",
         image: atelierNoirImg,
         description:
           "A creative project I built with Lovable.",
@@ -167,6 +175,7 @@ export const t = {
       },
       {
         title: "The Gamer Hall",
+        category: "esport",
         image: gamerHallImg,
         description:
           "A video gaming lounge I launched in Yaoundé, Cameroon.",
@@ -174,6 +183,7 @@ export const t = {
       },
       {
         title: "Personal Website",
+        category: "software",
         image: personalWebsiteImg,
         description:
           "This minimalist site, built with React & Tailwind. A space to share my writing and experiments.",
@@ -314,6 +324,7 @@ export const t = {
     projects_list: [
       {
         title: "Talents of Tomorrow",
+        category: "marketing",
         image: talentsImg,
         description:
           "Un programme de bourse que j'ai co-créé, organisé sous forme de jeu-concours permettant à trois étudiants africains de bénéficier d'un financement allant jusqu'à 20 000 € pour leur première année d'études en France. Je gère tous les aspects : sélection, création des épreuves et logistique.",
@@ -321,18 +332,21 @@ export const t = {
       },
       {
         title: "Projet Routier — Haïti",
+        category: "infra",
         image: roadHaitiImg,
         description:
           "Supervision administrative et financière de tous les projets dans le pays, avec remise en place de la comptabilité d'un projet routier de 42 km (CA : 75 M€, 500 personnes sur site). Management d'une équipe de 17. Réduction de 90 % des erreurs comptables, récupération de 2 M€ d'écarts.",
       },
       {
         title: "Projet de Voirie Urbaine — Cameroun",
+        category: "infra",
         image: urbanRoadsCameroonImg,
         description:
           "Gestion financière d'un projet de voirie urbaine de 21 km (CA : 31 M€, 200 employés). Management d'une équipe de 10. Projet livré 6 mois en avance, résultat net supérieur de 9 % aux prévisions.",
       },
       {
         title: "L'Atelier Noir",
+        category: "software",
         image: atelierNoirImg,
         description:
           "Un projet créatif que j'ai construit avec Lovable.",
@@ -340,6 +354,7 @@ export const t = {
       },
       {
         title: "The Gamer Hall",
+        category: "esport",
         image: gamerHallImg,
         description:
           "Une salle de jeu vidéo que j'ai lancée à Yaoundé, au Cameroun.",
@@ -347,6 +362,7 @@ export const t = {
       },
       {
         title: "Site Personnel",
+        category: "software",
         image: personalWebsiteImg,
         description:
           "Ce site minimaliste, construit avec React & Tailwind. Un espace pour partager mes écrits et expériences.",

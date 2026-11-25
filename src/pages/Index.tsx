@@ -17,10 +17,30 @@ const WorldMap = lazy(() => import("@/components/WorldMap"));
 
 interface PortfolioProject {
   title: string;
+  category: "marketing" | "infra" | "software" | "esport";
   image: string;
   description: string;
   link?: string;
 }
+
+const CATEGORY_META: Record<PortfolioProject["category"], { label: string; bg: string; fg: string }> = {
+  marketing: { label: "Marketing", bg: "hsl(var(--tag-marketing-bg))", fg: "hsl(var(--tag-marketing-fg))" },
+  infra: { label: "Infrastructure finance", bg: "hsl(var(--tag-infra-bg))", fg: "hsl(var(--tag-infra-fg))" },
+  software: { label: "Software", bg: "hsl(var(--tag-software-bg))", fg: "hsl(var(--tag-software-fg))" },
+  esport: { label: "Esport", bg: "hsl(var(--tag-esport-bg))", fg: "hsl(var(--tag-esport-fg))" },
+};
+
+const CategoryTag = ({ category }: { category: PortfolioProject["category"] }) => {
+  const meta = CATEGORY_META[category];
+  return (
+    <span
+      className="inline-block text-[11px] font-medium leading-none px-2 py-1 rounded-full"
+      style={{ backgroundColor: meta.bg, color: meta.fg, fontFamily: "var(--font-sans)" }}
+    >
+      {meta.label}
+    </span>
+  );
+};
 
 const Index = () => {
   const { lang, toggleLang } = useLang();
@@ -111,7 +131,7 @@ const Index = () => {
               key={i}
               type="button"
               onClick={() => setSelectedProject(item)}
-              className="group text-left rounded-md overflow-hidden border border-border bg-card transition-colors hover:border-foreground/40 focus:outline-none focus:ring-2 focus:ring-ring"
+              className="group text-left rounded-2xl overflow-hidden bg-card transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-ring shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-soft-hover)]"
             >
               <div className="aspect-[3/2] w-full overflow-hidden bg-muted">
                 <img
@@ -123,8 +143,9 @@ const Index = () => {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-3">
+              <div className="p-3.5 space-y-2">
                 <div className="text-sm font-semibold leading-snug">{item.title}</div>
+                <CategoryTag category={item.category} />
               </div>
             </button>
           ))}
@@ -145,6 +166,9 @@ const Index = () => {
                 </div>
                 <DialogHeader>
                   <DialogTitle>{selectedProject.title}</DialogTitle>
+                  <div className="pt-1">
+                    <CategoryTag category={selectedProject.category} />
+                  </div>
                   <DialogDescription className="text-foreground/80 leading-relaxed pt-2">
                     {selectedProject.description}
                   </DialogDescription>
