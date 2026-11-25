@@ -31,8 +31,8 @@ The point: going from idea to a live, bilingual site without waiting on a dev te
 ## Run locally
 
 ```sh
-git clone https://github.com/jbeambong/jordanbeambong.git
-cd jordanbeambong
+git clone https://github.com/jbeambong/jordanswebsite.git
+cd jordanswebsite
 npm install
 npm run dev
 ```
