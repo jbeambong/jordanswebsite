@@ -27,22 +27,12 @@ export const socials: Social[] = [
   {
     id: "youtube",
     label: "YouTube",
-    url: "https://www.youtube.com/@jordanbeambong",
-  },
-  {
-    id: "facebook",
-    label: "Facebook",
-    url: "https://www.facebook.com/jordanbeambong",
+    url: "https://www.youtube.com/watch?v=irlXSjnPzkE",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/jordanbeambong/",
-  },
-  {
-    id: "substack",
-    label: "Substack",
-    url: "https://jordanbeambong.substack.com",
   },
   {
     id: "spotify",
