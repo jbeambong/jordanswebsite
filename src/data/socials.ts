@@ -35,6 +35,11 @@ export const socials: Social[] = [
     url: "https://www.linkedin.com/in/jordanbeambong/",
   },
   {
+    id: "substack",
+    label: "Substack",
+    url: "https://substack.com/@jordanbeambong",
+  },
+  {
     id: "spotify",
     label: "Spotify",
     url: "https://open.spotify.com/user/rocketstarn8",
