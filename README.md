@@ -1,28 +1,27 @@
-# Jordan's Website
+# Jordan Béa Mbong — Personal Website
 
-je veux que tu me crées mon site web perso, très minimaliste (un peu la vibe de paulgraham.com)
+Personal website of Jordan Béa Mbong — Marketing & Tech.
 
-https://www.linkedin.com/in/jordanbeambong/
+**Live site:** [jordanbeambong.com](https://jordanbeambong.com)
 
-This project was built with [Lovable](https://lovable.dev).
+![Homepage preview](docs/preview.png)
 
-**Live app**: https://jordanbeambong.lovable.app
+## What's inside
 
-## Build with Lovable
+- **Portfolio**: filterable case studies across Marketing, Events, Software, Infrastructure Finance, and Esport, each with its own detail page.
+- **Writing**: essays and articles on marketing, tech, and business.
+- **Experience & Education**: collapsible career and academic timelines.
+- **Bilingual (EN / FR)**: instant language toggle across the entire site.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/bd3b2c60-07c1-4280-89d8-2a153da3fa3d).
+## Tech stack
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- React, TypeScript, Vite, Tailwind CSS
+- 100% static site — no database or CMS; all content lives in `src/data/` (`translations.ts`, `articles.ts`, `socials.ts`)
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Run locally
 
 ```sh
 git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
