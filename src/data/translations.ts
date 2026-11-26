@@ -6,7 +6,12 @@ import gamerHallAsset from "@/assets/gamer-hall.jpg.asset.json";
 import personalWebsiteImg from "@/assets/portfolio/personal-website.jpg";
 import dashboardMarketingAsset from "@/assets/dashboard-marketing.png.asset.json";
 import fete1erMaiAsset from "@/assets/fete-1er-mai-razel.jpg.asset.json";
-import gala10AnsImg from "@/assets/portfolio/gala-10-ans-studely.jpg";
+import galaCoverAsset from "@/assets/gala/gala-cover.jpg.asset.json";
+import galaPhoto2Asset from "@/assets/gala/gala-photo-2.jpg.asset.json";
+import galaPhoto3Asset from "@/assets/gala/gala-photo-3.jpg.asset.json";
+import galaPhoto4Asset from "@/assets/gala/gala-photo-4.jpg.asset.json";
+import galaPhoto5Asset from "@/assets/gala/gala-photo-5.jpg.asset.json";
+import galaPhoto6Asset from "@/assets/gala/gala-photo-6.jpg.asset.json";
 import welcomeFestAsset from "@/assets/welcome-fest-studely.jpg.asset.json";
 import linkedinPhilippeImg from "@/assets/portfolio/linkedin-philippe-simo.jpg";
 import personalBrandCeoImg from "@/assets/portfolio/personal-brand-ceo.jpg";
@@ -23,6 +28,14 @@ const gamerHallImg = gamerHallAsset.url;
 const dashboardMarketingImg = dashboardMarketingAsset.url;
 const fete1erMaiImg = fete1erMaiAsset.url;
 const welcomeFestImg = welcomeFestAsset.url;
+const gala10AnsImg = galaCoverAsset.url;
+const gala10AnsGallery = [
+  galaPhoto2Asset.url,
+  galaPhoto3Asset.url,
+  galaPhoto4Asset.url,
+  galaPhoto5Asset.url,
+  galaPhoto6Asset.url,
+];
 
 export const t = {
   en: {
@@ -292,18 +305,16 @@ export const t = {
         title: "Studely 10th Anniversary Gala",
         category: "events",
         image: gala10AnsImg,
+        gallery: gala10AnsGallery,
+        youtubeId: "eMt4x7DLh5A",
         summary:
           "A landmark evening celebrating a decade of Studely's mission to support international students in France, bringing together partners, alumni, institutions, and team members.",
         meta: {
           role: "Event Lead & Growth Marketing Manager",
           organization: "Studely",
-          period: "2025",
+          period: "2026",
         },
-        highlights: [
-          { value: "10 years", label: "Brand milestone celebrated" },
-          { value: "End-to-end", label: "Concept, production & guest experience" },
-          { value: "VIP & Alumni", label: "Partners, institutions & community gathered" },
-        ],
+        highlights: [],
         challenge:
           "Marking ten years of growth required more than a standard corporate reception. Studely needed a flagship moment that honored its history, strengthened ties with key institutional and banking partners, and projected its vision for the next decade.",
         approach:
@@ -847,18 +858,16 @@ export const t = {
         title: "Gala des 10 Ans Studely",
         category: "events",
         image: gala10AnsImg,
+        gallery: gala10AnsGallery,
+        youtubeId: "eMt4x7DLh5A",
         summary:
           "Une soirée phare célébrant dix ans d'engagement de Studely auprès des étudiants internationaux en France, réunissant partenaires, alumni, institutions et équipes.",
         meta: {
           role: "Responsable Événement & Growth Marketing",
           organization: "Studely",
-          period: "2025",
+          period: "2026",
         },
-        highlights: [
-          { value: "10 ans", label: "Cap symbolique célébré" },
-          { value: "De A à Z", label: "Concept, production & expérience invités" },
-          { value: "VIP & Alumni", label: "Partenaires, institutions & communauté réunis" },
-        ],
+        highlights: [],
         challenge:
           "Marquer dix années de croissance demandait bien plus qu'une simple réception. Studely avait besoin d'un moment fort pour honorer son histoire, consolider ses relations avec ses partenaires bancaires et institutionnels, et porter sa vision pour la décennie à venir.",
         approach:

@@ -4,6 +4,13 @@ import { ArrowLeft, ArrowUpRight, Globe } from "lucide-react";
 import { t } from "@/data/translations";
 import { useLang } from "@/contexts/LanguageContext";
 import { CategoryTag } from "@/components/CategoryTag";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -132,10 +139,47 @@ const ProjectDetail = () => {
           <p className="text-foreground/90 leading-relaxed">{project.approach}</p>
         </section>
 
+        {"gallery" in project && project.gallery && project.gallery.length > 0 && (
+          <section className="px-10">
+            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+              <CarouselContent>
+                {project.gallery.map((src, idx) => (
+                  <CarouselItem key={src} className="md:basis-1/2">
+                    <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-muted shadow-[var(--shadow-soft)]">
+                      <img
+                        src={src}
+                        alt={`${project.title} — ${idx + 2}`}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </section>
+        )}
+
         <section>
           <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyImpact}</h2>
           <p className="text-foreground/90 leading-relaxed">{project.impact}</p>
         </section>
+
+        {"youtubeId" in project && project.youtubeId && (
+          <section>
+            <div className="aspect-video w-full overflow-hidden rounded-2xl bg-muted shadow-[var(--shadow-soft)]">
+              <iframe
+                src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                title={project.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </div>
+          </section>
+        )}
       </article>
 
       <hr className="mb-10" />
