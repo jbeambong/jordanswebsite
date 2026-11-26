@@ -129,15 +129,19 @@ const ProjectDetail = () => {
 
       {/* Narrative Sections */}
       <article className="space-y-12 mb-16">
-        <section>
-          <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyChallenge}</h2>
-          <p className="text-foreground/90 leading-relaxed">{project.challenge}</p>
-        </section>
+        {project.challenge && (
+          <section>
+            <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyChallenge}</h2>
+            <p className="text-foreground/90 leading-relaxed">{project.challenge}</p>
+          </section>
+        )}
 
-        <section>
-          <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyApproach}</h2>
-          <p className="text-foreground/90 leading-relaxed">{project.approach}</p>
-        </section>
+        {project.approach && (
+          <section>
+            <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyApproach}</h2>
+            <p className="text-foreground/90 leading-relaxed">{project.approach}</p>
+          </section>
+        )}
 
         {"gallery" in project && project.gallery && project.gallery.length > 0 && (
           <section className="px-10">
@@ -162,10 +166,12 @@ const ProjectDetail = () => {
           </section>
         )}
 
-        <section>
-          <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyImpact}</h2>
-          <p className="text-foreground/90 leading-relaxed">{project.impact}</p>
-        </section>
+        {project.impact && (
+          <section>
+            <h2 className="text-xl md:text-2xl mb-4">{tr.caseStudyImpact}</h2>
+            <p className="text-foreground/90 leading-relaxed">{project.impact}</p>
+          </section>
+        )}
 
         {"youtubeId" in project && project.youtubeId && (
           <section>

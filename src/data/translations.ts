@@ -1,7 +1,7 @@
 import talentsAsset from "@/assets/talents-of-tomorrow.jpg.asset.json";
 import roadHaitiAsset from "@/assets/road-project-haiti.jpeg.asset.json";
 import urbanRoadsCameroonAsset from "@/assets/urban-roads-cameroon.jpeg.asset.json";
-import atelierNoirImg from "@/assets/portfolio/atelier-noir.jpg";
+import atelierNoirAsset from "@/assets/atelier-noir-live.png.asset.json";
 import gamerHallAsset from "@/assets/gamer-hall.jpg.asset.json";
 import personalWebsiteImg from "@/assets/portfolio/personal-website.jpg";
 import dashboardMarketingAsset from "@/assets/dashboard-marketing.png.asset.json";
@@ -13,8 +13,8 @@ import galaPhoto4Asset from "@/assets/gala/gala-photo-4.jpg.asset.json";
 import galaPhoto5Asset from "@/assets/gala/gala-photo-5.jpg.asset.json";
 import galaPhoto6Asset from "@/assets/gala/gala-photo-6.jpg.asset.json";
 import welcomeFestAsset from "@/assets/welcome-fest-studely.jpg.asset.json";
-import linkedinPhilippeImg from "@/assets/portfolio/linkedin-philippe-simo.jpg";
-import personalBrandCeoImg from "@/assets/portfolio/personal-brand-ceo.jpg";
+import linkedinPhilippeAsset from "@/assets/philippe-simo.jpg.asset.json";
+import personalBrandCeoAsset from "@/assets/ceo-personal-brand.webp.asset.json";
 import studelyTiktokImg from "@/assets/portfolio/studely-tiktok-growth.jpg";
 import studelyFacebookImg from "@/assets/portfolio/studely-facebook-organic.jpg";
 import studelyWebsiteImg from "@/assets/portfolio/studely-website-rebuild.jpg";
@@ -46,10 +46,13 @@ const talentsGallery = [
 ];
 const roadHaitiImg = roadHaitiAsset.url;
 const urbanRoadsCameroonImg = urbanRoadsCameroonAsset.url;
+const atelierNoirImg = atelierNoirAsset.url;
 const gamerHallImg = gamerHallAsset.url;
 const dashboardMarketingImg = dashboardMarketingAsset.url;
 const fete1erMaiImg = fete1erMaiAsset.url;
 const welcomeFestImg = welcomeFestAsset.url;
+const linkedinPhilippeImg = linkedinPhilippeAsset.url;
+const personalBrandCeoImg = personalBrandCeoAsset.url;
 const gala10AnsImg = galaCoverAsset.url;
 const gala10AnsGallery = [
   galaPhoto2Asset.url,
@@ -402,23 +405,19 @@ export const t = {
         category: "events",
         image: fete1erMaiImg,
         summary:
-          "Full-scale organization of the annual Labour Day celebration for Razel-Bec's on-site teams, bringing together hundreds of workers and staff for a memorable day of recognition.",
+          "End-to-end organization of the 2019 Labour Day celebration for Razel-Bec, bringing together 800 employees for a full day and evening of recognition.",
         meta: {
           role: "Finance & Admin Project Manager",
           organization: "Razel-Bec",
-          period: "2018 – 2021",
+          period: "2019",
         },
-        highlights: [
-          { value: "200–500", label: "Employees & staff gathered on site" },
-          { value: "Full logistics", label: "Budget, catering, entertainment & safety" },
-          { value: "Team cohesion", label: "Key annual morale & culture milestone" },
-        ],
+        highlights: [],
         challenge:
-          "On large-scale civil engineering sites operating under intense schedules, maintaining morale and cohesion across hundreds of local and expatriate workers is essential. May 1st is a flagship cultural moment that requires flawless coordination.",
+          "On a major civil engineering site operating under intense schedules, May 1st is a flagship cultural moment. Bringing 800 Razel employees together for a festive day and evening required rigorous coordination and particular attention to safety given the size of the crowd.",
         approach:
-          "Alongside my financial management duties, I oversaw budgeting, vendor sourcing, catering, branded apparel, entertainment, and site logistics to deliver a safe and festive celebration for the entire workforce.",
+          "As Administrative and Financial Manager, I created and supervised the entire event: scouting and booking the venue, designing the menu, sourcing subcontractors for catering, traditional printed fabrics (pagnes), and drinks, handling all administrative work including official parade permits, and closely overseeing security throughout the celebration.",
         impact:
-          "The celebration strengthened team spirit across all departments, recognized the daily commitment of field crews, and became one of the most anticipated moments of the year on site.",
+          "Everything went smoothly without a hitch. We received overwhelmingly positive feedback from the teams and saw a tangible boost in morale and productivity back on site.",
       },
       {
         slug: "linkedin-philippe-simo",
@@ -440,7 +439,7 @@ export const t = {
         challenge:
           "Despite a massive presence on YouTube and other platforms, Philippe Simo's LinkedIn account was under-exploited at 4,000 followers and lacked a dedicated editorial voice tailored to decision-makers and diaspora entrepreneurs.",
         approach:
-          "I structured a consistent LinkedIn content engine: sharpening the positioning, identifying high-resonance business and investment themes, crafting punchy hooks and storytelling formats, and iterating weekly based on engagement analytics.",
+          "I drew mainly from his existing content across YouTube and other channels, adapting his ideas, stories, and business insights to LinkedIn's specific codes—punchy hooks, clear structure, and high-retention storytelling—while iterating weekly based on engagement analytics.",
         impact:
           "In six months, the account grew from 4,000 to 50,000 followers purely organically, establishing LinkedIn as a major acquisition and authority channel for his ecosystem.",
       },
@@ -450,23 +449,19 @@ export const t = {
         category: "marketing",
         image: personalBrandCeoImg,
         summary:
-          "Executive personal branding and LinkedIn growth mission for a startup CEO, turning founder insights into a predictable inbound visibility engine.",
+          "LinkedIn personal branding and ghostwriting for Duplex Kamgang, founder and then-CEO of Studely, growing his audience from 4k–5k to 12,000 followers in a few months.",
         meta: {
           role: "Growth Marketing Consultant",
-          organization: "Startup CEO (Confidential)",
+          organization: "Duplex Kamgang (Studely)",
           period: "2023 – 2024",
         },
-        highlights: [
-          { value: "+175%", label: "LinkedIn audience growth" },
-          { value: "50%+", label: "Email open rate on companion newsletter" },
-          { value: "Inbound", label: "Consistent qualified leads & press outreach" },
-        ],
+        highlights: [],
         challenge:
-          "The founder had deep industry expertise and a compelling vision, but no time to formalize a content strategy or publish consistently on LinkedIn to attract investors, clients, and talent.",
+          "Duplex Kamgang, founder and then-CEO of Studely, approached me after seeing my work on Philippe Simo's LinkedIn profile. He wanted to build his own LinkedIn audience from an existing base of around 4,000 to 5,000 followers, with a clear voice and consistent presence.",
         approach:
-          "I built a lightweight ghostwriting and editorial workflow: short weekly interviews to extract authentic stories, structured content pillars, LinkedIn profile optimization, and performance tracking tied to business goals.",
+          "I worked closely with him to build an editorial calendar and identify the right conversation topics and key messages. I then handled ghostwriting and copywriting, crafting and refining each post to match LinkedIn's codes while keeping his authentic tone.",
         impact:
-          "The CEO's LinkedIn presence grew by 175%, generating recurring inbound conversations with prospects and partners while strengthening employer branding.",
+          "Over a few months of collaboration, his LinkedIn following grew from 4,000–5,000 to 12,000 followers, strengthening his visibility and credibility across Studely's ecosystem.",
       },
       {
         slug: "road-project-haiti",
@@ -474,23 +469,23 @@ export const t = {
         category: "infra",
         image: roadHaitiImg,
         summary:
-          "Financial turnaround and administration of a €75M, 42 km road infrastructure project in Haiti with 500 people on site.",
+          "Two-year financial turnaround of a 42 km, €50M+ road project in Haiti (500 staff), before taking over administration and finance for the entire country's €75M portfolio.",
         meta: {
           role: "Finance Project Manager",
           organization: "Razel-Bec",
           period: "2020 – 2022",
         },
         highlights: [
-          { value: "€75M", label: "Project revenue across 42 km of road" },
+          { value: "€75M", label: "Total country portfolio managed" },
           { value: "-90%", label: "Reduction in accounting errors" },
           { value: "€2M", label: "Discrepancies recovered" },
         ],
         challenge:
-          "Operating in a complex local environment, the 42 km road project faced major accounting discrepancies, fragmented reporting, and high operational pressure across 500 on-site staff.",
+          "Assigned to Haiti for two years following my successful mission in Cameroon, I stepped in near the end of a much larger 42 km road project (€50M+ in revenue, ~500 people on site) run in a joint venture with a Haitian company. Financially, the project was already in a loss position and its accounting had been poorly maintained by the JV partner—the priority was cleaning up and straightening out the books rather than chasing margin.",
         approach:
-          "I took over administration and finance for all in-country projects, restructured a team of 17, rebuilt accounting controls from the ground up, and implemented rigorous monthly reconciliation processes.",
+          "Replacing the outgoing site manager, I handled all core administrative and financial operations (equipment, personnel, cash management, purchasing, admin) while overhauling the site's accounting from the ground up. I then expanded my scope to lead the entire Haiti territory—overseeing the country headquarters, this site, and all remaining projects totaling a €75M portfolio, with deep hands-on work in general accounting and account closing.",
         impact:
-          "Accounting errors dropped by 90%, €2M in discrepancies were recovered, and headquarters regained full financial visibility over country operations.",
+          "Accounting errors dropped by 90%, €2M in discrepancies were recovered, and headquarters regained full financial visibility across the €75M Haiti portfolio.",
       },
       {
         slug: "urban-roads-cameroon",
@@ -498,7 +493,7 @@ export const t = {
         category: "infra",
         image: urbanRoadsCameroonImg,
         summary:
-          "Financial leadership of a €31M, 21 km urban roads construction project in Bafoussam, Cameroon, delivered 6 months ahead of schedule.",
+          "My first field assignment: two years in Bafoussam, Cameroon, as #2 on a €31M, 21 km urban roads site (200 staff), delivered 6 months ahead of schedule.",
         meta: {
           role: "Finance Project Manager",
           organization: "Razel-Bec",
@@ -510,11 +505,11 @@ export const t = {
           { value: "+9%", label: "Net result above initial forecast" },
         ],
         challenge:
-          "Large urban civil works require tight cash-flow discipline, supplier coordination, and continuous cost control to protect margins while keeping 200 employees moving at pace.",
+          "This two-year project in Bafoussam, Cameroon, was my first field experience—with major stakes and early responsibility. Operating in a remote location with 200 people on site and full day-to-day independence from headquarters, we had to make fast decisions and keep the budget tightly on track with zero drift.",
         approach:
-          "I managed a finance and admin team of 10, steering cost tracking, subcontractor billing, payroll, and budget forecasts in close partnership with the project director.",
+          "As #2 on site right behind the Works Director, I worked hand in hand with him to hold the budget while managing a team of around 15 people: an HR manager, two HR agents, an equipment manager, a cashier, a storekeeper, the site catering team, IT maintenance, and the purchasing manager and department. It was where I took my first steps in management and learned to resolve high-pressure crisis situations.",
         impact:
-          "The project was delivered 6 months ahead of schedule with a net financial result 9% stronger than initially forecast.",
+          "The project was delivered 6 months ahead of schedule with a net financial result 9% above initial forecast. Beyond the numbers, it was my hardest and most formative experience—the one that shaped me most as a professional.",
       },
       {
         slug: "latelier-noir",
@@ -522,7 +517,7 @@ export const t = {
         category: "software",
         image: atelierNoirImg,
         summary:
-          "A creative web experience designed and shipped rapidly with Lovable, exploring editorial aesthetics and interactive storytelling.",
+          "My first real vibe-coding side project: upload a photo of yourself, your family, or your pet and generate vintage-style portraits, built with Stripe and Shopify integrations.",
         meta: {
           role: "Creator & Builder",
           organization: "Personal Project",
@@ -534,11 +529,9 @@ export const t = {
           { value: "Editorial", label: "Focus on typography & visual craft" },
         ],
         challenge:
-          "Exploring how modern AI-native development tools can compress the gap between a creative direction and a polished, live web product.",
-        approach:
-          "I designed the visual identity, crafted the copy, and iterated directly in Lovable to refine layout, responsiveness, and interactions.",
-        impact:
-          "Shipped a live creative showcase in a fraction of the traditional development cycle.",
+          "This was my first real vibe-coding project involving full integrations like Stripe and Shopify. I built it on the side purely to get hands-on practice: users upload a photo of themselves, their family, or their pet and get vintage period portraits in return. It was a hobby project, and it taught me a lot along the way—from how Shopify works under the hood to choosing the right AI image models for high-quality results.",
+        approach: "",
+        impact: "",
         link: "https://lateliernoir.lovable.app",
       },
       {
@@ -572,23 +565,17 @@ export const t = {
         category: "software",
         image: personalWebsiteImg,
         summary:
-          "This minimalist bilingual site, inspired by Paul Graham and Andrej Karpathy, built with React and Tailwind to share my work, writing, and experiments.",
+          "Vibe coding my personal website with Lovable—without bothering with a CMS.",
         meta: {
           role: "Designer & Developer",
           organization: "Personal Project",
           period: "2025 – Present",
         },
-        highlights: [
-          { value: "100% Static", label: "Zero database, fast & maintainable" },
-          { value: "EN / FR", label: "Seamless bilingual experience" },
-          { value: "Minimalist", label: "Editorial serif typography & calm layout" },
-        ],
+        highlights: [],
         challenge:
-          "Creating a personal home on the internet that stays timeless, fast, easy to update, and free from unnecessary complexity.",
-        approach:
-          "I built a clean static React + Tailwind architecture with structured TypeScript data files, a cream editorial palette, and dedicated pages for essays and case studies.",
-        impact:
-          "A central hub for my portfolio, writing, and professional identity at jordanbeambong.com.",
+          "I needed to build and update a personal website to have a clean presence online, without dealing with a heavy CMS. I decided to vibe code it from A to Z with Lovable—and this site is the result. Nothing crazy, just a fun project to put together.",
+        approach: "",
+        impact: "",
         link: "https://www.jordanbeambong.com",
       },
       {
@@ -597,23 +584,19 @@ export const t = {
         category: "marketing",
         image: dashboardMarketingImg,
         summary:
-          "Built a real-time marketing dashboard and a €500k annual budget tracking system to bring full data-driven discipline to the marketing department.",
+          "Built an off-ledger budget tracking process and a centralized real-time marketing dashboard on Lovable to steer every channel, lead status, and euro spent.",
         meta: {
-          role: "Growth Marketing Manager & Creator",
+          role: "Growth Marketing Manager",
           organization: "Studely",
           period: "2025 – 2026",
         },
-        highlights: [
-          { value: "Real-time", label: "Acquisition, conversion & revenue KPIs" },
-          { value: "€500k / yr", label: "Annual marketing budget tracked & controlled" },
-          { value: "Live demo", label: "Interactive web dashboard template" },
-        ],
+        highlights: [],
         challenge:
-          "When I arrived, the department had no real-time marketing dashboard and no structured budget monitoring, making it difficult to steer a €500k annual B2C budget with consistency.",
+          "When I arrived at Studely, there was no budget-tracking culture in place. Marketing spend was only reviewed at year-end, it was hard to trace what each expense corresponded to, and the company had no accounting software—making off-ledger tracking essential.",
         approach:
-          "Combining my financial controlling background with growth marketing, I built a live KPI cockpit alongside a rigorous budget tracking system—then turned the dashboard architecture into a reusable interactive web template.",
+          "To adopt a truly data-driven approach without slowing the team down, I started with off-ledger tracking of all marketing expenses and monthly reconciliations with the finance team to allocate every cost properly. I then built this centralized dashboard on Lovable with dedicated tabs for SEO, budget, paid media, influencer marketing, social media, referral, lead statuses, and revenue. Building it also pushed me much deeper into APIs, syncing live data across Google Sheets, HubSpot, Google Analytics, Semrush, Claude, and more.",
         impact:
-          "Enabled data-driven weekly decisions across acquisition, conversion, and spend consistency, and produced a live template any marketing team can adapt.",
+          "Leadership now gets marketing insights much faster, with far tighter cost control and better visibility on the real impact of every action—making it easy to decide in the short term what to scale or adjust.",
         link: "https://marketingdashboardtemplate.lovable.app",
       },
     ],
@@ -958,23 +941,19 @@ export const t = {
         category: "events",
         image: fete1erMaiImg,
         summary:
-          "Organisation complète de la célébration annuelle de la Fête du Travail pour les équipes de chantier de Razel-Bec, réunissant plusieurs centaines de collaborateurs.",
+          "Organisation de bout en bout de la Fête du 1er Mai 2019 pour Razel-Bec, réunissant 800 employés pour une grande journée et soirée de célébration.",
         meta: {
           role: "Responsable Administratif & Financier",
           organization: "Razel-Bec",
-          period: "2018 – 2021",
+          period: "2019",
         },
-        highlights: [
-          { value: "200–500", label: "Collaborateurs réunis sur site" },
-          { value: "Logistique totale", label: "Budget, restauration, animations & sécurité" },
-          { value: "Cohésion", label: "Temps fort annuel de la culture chantier" },
-        ],
+        highlights: [],
         challenge:
-          "Sur des grands chantiers de travaux publics soumis à des rythmes soutenus, entretenir la cohésion et la motivation entre centaines d'équipes locales et expatriées est crucial. Le 1er Mai est un rendez-vous culturel majeur qui demande une organisation irréprochable.",
+          "Sur un grand chantier de travaux publics soumis à des rythmes soutenus, le 1er Mai est un rendez-vous culturel majeur. Réunir 800 employés Razel pour une grande soirée festive demandait une coordination rigoureuse et une attention particulière au volet sécurité au vu de l'affluence.",
         approach:
-          "En parallèle de mes responsabilités financières, j'ai piloté le budget, la sélection des prestataires, la restauration, les tenues dédiées, les animations et la logistique terrain pour offrir une journée festive et sécurisée à l'ensemble du personnel.",
+          "En tant que responsable administratif et financier, j'ai créé et supervisé l'ensemble de l'événement : recherche et réservation du lieu, confection du menu, sélection des sous-traitants pour la restauration, les pagnes et les boissons, démarches administratives dont les autorisations de défilé, et surveillance étroite du volet sécurité tout au long de la fête.",
         impact:
-          "L'événement a renforcé l'esprit d'équipe entre tous les services, valorisé l'engagement quotidien des équipes terrain et constitué l'un des moments les plus attendus de l'année sur le chantier.",
+          "Tout s'est très bien passé : nous avons reçu des retours extrêmement positifs des équipes et constaté un réel gain de productivité sur le chantier.",
       },
       {
         slug: "linkedin-philippe-simo",
@@ -996,7 +975,7 @@ export const t = {
         challenge:
           "Malgré une forte notoriété sur YouTube et d'autres plateformes, le compte LinkedIn de Philippe Simo restait sous-exploité autour de 4 000 abonnés, sans ligne éditoriale dédiée aux décideurs et entrepreneurs de la diaspora.",
         approach:
-          "J'ai mis en place une mécanique éditoriale régulière : clarification du positionnement, sélection des thématiques business et investissement les plus engageantes, travail sur les accroches et le storytelling, et itérations hebdomadaires à partir des données de performance.",
+          "Je me suis surtout inspiré de son contenu déjà existant sur YouTube et ses autres plateformes, en le réadaptant aux codes spécifiques de LinkedIn : accroches percutantes, structure lisible, storytelling business et itérations hebdomadaires à partir des données de performance.",
         impact:
           "En six mois, le compte est passé de 4 000 à 50 000 abonnés de façon purement organique, faisant de LinkedIn un canal majeur d'autorité et d'acquisition pour son écosystème.",
       },
@@ -1006,23 +985,19 @@ export const t = {
         category: "marketing",
         image: personalBrandCeoImg,
         summary:
-          "Accompagnement en personal branding et croissance LinkedIn pour un CEO de startup, transformant son expertise en moteur régulier de visibilité entrante.",
+          "Stratégie éditoriale et ghostwriting LinkedIn pour Duplex Kamgang, fondateur et alors CEO de Studely, passant son audience de 4 000–5 000 à 12 000 abonnés en quelques mois.",
         meta: {
           role: "Consultant Growth Marketing",
-          organization: "CEO de Startup (Confidentiel)",
+          organization: "Duplex Kamgang (Studely)",
           period: "2023 – 2024",
         },
-        highlights: [
-          { value: "+175 %", label: "Croissance de l'audience LinkedIn" },
-          { value: "> 50 %", label: "Taux d'ouverture sur la newsletter associée" },
-          { value: "Inbound", label: "Prises de contact qualifiées & opportunités" },
-        ],
+        highlights: [],
         challenge:
-          "Le dirigeant disposait d'une forte expertise métier et d'une vision claire, mais manquait de temps pour structurer une stratégie de contenu et publier régulièrement sur LinkedIn afin d'attirer clients, investisseurs et talents.",
+          "Duplex Kamgang, fondateur et à l'époque CEO de Studely, m'a approché après m'avoir vu travailler sur le profil LinkedIn de Philippe Simo. Il comptait alors 4 000 à 5 000 abonnés et souhaitait développer sa propre audience sur LinkedIn.",
         approach:
-          "J'ai déployé un processus léger de ghostwriting et de stratégie éditoriale : courts entretiens hebdomadaires pour capter sa voix authentique, piliers de contenu ciblés, optimisation du profil et suivi précis des indicateurs clés.",
+          "J'ai travaillé avec lui pour établir le calendrier éditorial et identifier les bons sujets de conversation et messages clés. Je me suis ensuite lancé dans le ghostwriting et le copywriting pour l'aider à trouver les bons mots et peaufiner ses publications selon les codes propres à LinkedIn.",
         impact:
-          "La présence LinkedIn du CEO a progressé de 175 %, générant des conversations entrantes régulières avec des prospects et partenaires tout en renforçant la marque employeur.",
+          "En quelques mois de collaboration, son compte est passé de 4 000–5 000 à 12 000 abonnés, renforçant durablement sa visibilité et sa crédibilité sur le réseau.",
       },
       {
         slug: "road-project-haiti",
@@ -1030,23 +1005,23 @@ export const t = {
         category: "infra",
         image: roadHaitiImg,
         summary:
-          "Redressement financier et gestion administrative d'un projet routier de 75 M€ et 42 km en Haïti mobilisant 500 personnes sur site.",
+          "Mission de deux ans en Haïti : redressement comptable d'un chantier routier de 42 km et plus de 50 M€ (500 personnes), puis direction administrative et financière de tout le territoire (75 M€).",
         meta: {
           role: "Responsable Financier de Projets",
           organization: "Razel-Bec",
           period: "2020 – 2022",
         },
         highlights: [
-          { value: "75 M€", label: "Chiffre d'affaires sur 42 km de route" },
+          { value: "75 M€", label: "Portefeuille total géré sur le territoire" },
           { value: "-90 %", label: "Réduction des erreurs comptables" },
           { value: "2 M€", label: "D'écarts récupérés" },
         ],
         challenge:
-          "Dans un contexte local complexe, le chantier de 42 km faisait face à d'importants écarts comptables, un reporting fragmenté et une forte pression opérationnelle auprès de 500 collaborateurs.",
+          "Affecté en Haïti pour deux ans après ma mission réussie au Cameroun, j'ai atterri sur un chantier bien plus vaste : 42 km de voie, un peu plus de 50 M€ de chiffre d'affaires et environ 500 personnes, mené en groupement avec une entreprise haïtienne. Le chantier approchait de sa fin et était perdu financièrement : l'enjeu n'était pas le résultat, mais de redresser une comptabilité mal tenue par le partenaire du groupement.",
         approach:
-          "J'ai repris la supervision administrative et financière de tous les projets du pays, réorganisé une équipe de 17 personnes, reconstruit les contrôles comptables et instauré des clôtures mensuelles rigoureuses.",
+          "En remplacement de la personne en poste, j'ai assuré toutes les missions classiques (matériel, personnel, caisse, achats, administratif) tout en remettant d'aplomb la comptabilité du site. J'ai ensuite pris la direction de tout le territoire : comptabilité de ce chantier, direction du siège et des autres chantiers restants, soit 75 M€ de portefeuille au total — un rôle où j'ai touché de près à la comptabilité générale et aux clôtures de comptes.",
         impact:
-          "Les erreurs comptables ont été réduites de 90 %, 2 M€ d'écarts ont été récupérés et le siège a retrouvé une visibilité financière complète sur les opérations du pays.",
+          "Les erreurs comptables ont été réduites de 90 %, 2 M€ d'écarts ont été récupérés et le siège a retrouvé une visibilité financière complète sur les 75 M€ d'opérations du territoire.",
       },
       {
         slug: "urban-roads-cameroon",
@@ -1054,7 +1029,7 @@ export const t = {
         category: "infra",
         image: urbanRoadsCameroonImg,
         summary:
-          "Pilotage financier d'un projet de voirie urbaine de 31 M€ et 21 km à Bafoussam, au Cameroun, livré avec 6 mois d'avance.",
+          "Ma première expérience de terrain : deux ans à Bafoussam, au Cameroun, comme numéro deux sur un chantier de 31 M€ et 21 km (200 personnes), livré avec 6 mois d'avance.",
         meta: {
           role: "Responsable Financier de Projet",
           organization: "Razel-Bec",
@@ -1066,11 +1041,11 @@ export const t = {
           { value: "+9 %", label: "Résultat net supérieur aux prévisions" },
         ],
         challenge:
-          "Les grands travaux de voirie urbaine exigent une discipline stricte sur la trésorerie, la facturation sous-traitants et le suivi budgétaire afin de protéger les marges tout en maintenant la cadence des 200 collaborateurs.",
+          "Ce chantier de deux ans à Bafoussam, au Cameroun, a été ma première expérience de terrain, avec une prise de responsabilité très précoce et des enjeux majeurs. Nous étions 200 dans un endroit assez reculé, en indépendance vis-à-vis du siège : il fallait décider vite et superviser le budget pour éviter toute dérive.",
         approach:
-          "J'ai encadré une équipe administrative et financière de 10 personnes, en pilotant le contrôle de gestion, la paie, les fournisseurs et les prévisions en lien étroit avec la direction de projet.",
+          "Numéro deux sur le chantier juste derrière le directeur travaux, j'ai travaillé de pair avec lui pour tenir le budget tout en manageant une quinzaine de personnes : gestionnaire personnel, deux agents du personnel, gestionnaire matériel, caissière, magasinier, équipe de restauration, maintenance informatique et service achats. C'est là que j'ai fait mes premiers pas en management et appris à résoudre des situations de crise.",
         impact:
-          "Le chantier a été livré 6 mois en avance avec un résultat net supérieur de 9 % au budget initial.",
+          "Le chantier a été livré 6 mois en avance avec un résultat net supérieur de 9 % au budget initial. Surtout, cela reste mon expérience la plus difficile et la plus formative — celle qui m'a le plus forgé professionnellement.",
       },
       {
         slug: "latelier-noir",
@@ -1078,7 +1053,7 @@ export const t = {
         category: "software",
         image: atelierNoirImg,
         summary:
-          "Une expérience web créative conçue et déployée rapidement avec Lovable, explorant une direction artistique éditoriale soignée.",
+          "Mon premier vrai projet de vibe coding avec intégrations Stripe et Shopify : uploader une photo de soi, de sa famille ou de son animal pour obtenir des portraits d'époque.",
         meta: {
           role: "Créateur & Builder",
           organization: "Projet personnel",
@@ -1090,11 +1065,9 @@ export const t = {
           { value: "Éditorial", label: "Travail sur la typographie et le rythme" },
         ],
         challenge:
-          "Explorer comment les outils modernes de développement assisté par IA permettent de passer rapidement d'une intention créative à un produit web abouti.",
-        approach:
-          "J'ai défini la direction artistique, rédigé les contenus et itéré directement dans Lovable sur la mise en page, le responsive et les micro-interactions.",
-        impact:
-          "Mise en ligne d'une vitrine créative complète dans un délai très court.",
+          "C'était mon premier vrai projet de vibe coding incluant des intégrations Stripe, Shopify, etc., créé à côté pour me faire la main. Le principe est simple : uploader une photo de toi, de ta famille ou de ton animal de compagnie pour obtenir des photos d'époque. C'était avant tout un projet de loisir, mais il m'a appris pas mal de choses : comprendre comment fonctionne Shopify, choisir les bons modèles IA pour obtenir des rendus de qualité, etc.",
+        approach: "",
+        impact: "",
         link: "https://lateliernoir.lovable.app",
       },
       {
@@ -1128,23 +1101,17 @@ export const t = {
         category: "software",
         image: personalWebsiteImg,
         summary:
-          "Ce site minimaliste bilingue, inspiré par Paul Graham et Andrej Karpathy, construit avec React et Tailwind pour partager mes projets, écrits et expériences.",
+          "Vibe coder mon site web avec Lovable, sans m'embêter avec un CMS.",
         meta: {
           role: "Designer & Développeur",
           organization: "Projet personnel",
           period: "2025 – Aujourd'hui",
         },
-        highlights: [
-          { value: "100 % Statique", label: "Sans base de données, rapide et léger" },
-          { value: "EN / FR", label: "Expérience bilingue fluide" },
-          { value: "Minimaliste", label: "Typographie serif et mise en page aérée" },
-        ],
+        highlights: [],
         challenge:
-          "Créer un espace personnel sur le web qui reste intemporel, rapide, facile à faire évoluer et débarrassé de toute complexité superflue.",
-        approach:
-          "J'ai conçu une architecture statique React + Tailwind structurée autour de fichiers TypeScript, d'une palette crème chaleureuse et de pages dédiées aux articles et études de cas.",
-        impact:
-          "Un point d'ancrage central pour mon portfolio, mes écrits et mon identité professionnelle sur jordanbeambong.com.",
+          "J'avais besoin de créer et mettre à jour mon site personnel pour avoir une présence sur Internet, sans m'embêter avec un CMS. J'ai décidé de le faire de A à Z avec Lovable — et voilà ce que donne ce petit site. Rien de fou, mais c'était assez sympa à faire.",
+        approach: "",
+        impact: "",
         link: "https://www.jordanbeambong.com",
       },
       {
@@ -1153,23 +1120,19 @@ export const t = {
         category: "marketing",
         image: dashboardMarketingImg,
         summary:
-          "Mis en place un tableau de bord marketing en temps réel et un système de suivi d'un budget annuel de 500 k€ pour piloter le département par la donnée.",
+          "Mise en place d'un suivi budgétaire extra-comptable et d'un tableau de bord marketing centralisé sur Lovable pour piloter chaque canal, lead et euro dépensé.",
         meta: {
-          role: "Growth Marketing Manager & Créateur",
+          role: "Growth Marketing Manager",
           organization: "Studely",
           period: "2025 – 2026",
         },
-        highlights: [
-          { value: "Temps réel", label: "Indicateurs d'acquisition, conversion & revenus" },
-          { value: "500 k€ / an", label: "Budget marketing annuel suivi et maîtrisé" },
-          { value: "Démo live", label: "Application web interactive réutilisable" },
-        ],
+        highlights: [],
         challenge:
-          "À mon arrivée, le département ne disposait ni d'outil de pilotage en temps réel ni de suivi budgétaire structuré, rendant difficile la gestion cohérente d'un budget annuel B2C de 500 k€.",
+          "À mon arrivée chez Studely, il n'y avait pas de culture de suivi budgétaire installée : les dépenses marketing n'étaient contrôlées qu'en fin d'année, on peinait à savoir à quoi correspondait chaque ligne et l'entreprise n'avait pas de logiciel comptable, ce qui imposait un suivi extra-comptable.",
         approach:
-          "En croisant mon passé de contrôleur de gestion avec le growth marketing, j'ai construit un tableau de bord KPI en temps réel couplé à un suivi budgétaire rigoureux — puis décliné le dashboard en modèle web interactif.",
+          "Pour adopter une approche data-driven sans ralentir l'organisation, j'ai d'abord mis en place un suivi extra-comptable de toutes les dépenses marketing avec des réconciliations mensuelles auprès de l'équipe financière. J'ai ensuite créé ce dashboard sur Lovable comme espace centralisé regroupant SEO, budget, paid media, influencer marketing, réseaux sociaux, referral, statuts des leads et chiffre d'affaires. Ce projet m'a aussi permis d'aller beaucoup plus en profondeur dans les API pour synchroniser les données entre Google Sheets, HubSpot, Google Analytics, Semrush, Claude et bien d'autres.",
         impact:
-          "A instauré une prise de décision pilotée par la donnée sur l'acquisition, la conversion et la tenue du budget, tout en offrant un modèle live directement exploitable.",
+          "La direction accède désormais aux informations marketing beaucoup plus vite, avec une maîtrise nettement plus efficace de nos coûts et de la qualité de nos actions pour décider à court terme de ce qu'il faut poursuivre ou ajuster.",
         link: "https://marketingdashboardtemplate.lovable.app",
       },
     ],
