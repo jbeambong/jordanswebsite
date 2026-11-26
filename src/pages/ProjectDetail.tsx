@@ -27,7 +27,7 @@ const ProjectDetail = () => {
     return (
       <main className="max-w-[760px] mx-auto px-6 py-20">
         <p className="text-muted-foreground mb-4">{tr.projectNotFound}</p>
-        <Link to="/" className="inline-flex items-center gap-1.5 text-sm">
+        <Link to="/portfolio" className="inline-flex items-center gap-1.5 text-sm">
           <ArrowLeft className="w-4 h-4" />
           {tr.backToPortfolio}
         </Link>
@@ -40,7 +40,7 @@ const ProjectDetail = () => {
       {/* Top bar */}
       <div className="flex items-center justify-between mb-12">
         <Link
-          to="/"
+          to="/portfolio"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground no-underline transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
