@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import { socials, type SocialId } from "@/data/socials";
 
 type IconProps = { className?: string };
@@ -22,6 +22,7 @@ const ICONS: Record<SocialId, ComponentType<IconProps>> = {
   youtube: Youtube,
   facebook: Facebook,
   linkedin: Linkedin,
+  github: Github,
   substack: SubstackIcon,
   spotify: SpotifyIcon,
 };

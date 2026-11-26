@@ -40,7 +40,6 @@ const Index = () => {
         />
         <div>
           <h1 className="text-2xl md:text-3xl mb-1">Jordan Bea Mbong</h1>
-          <p className="text-muted-foreground italic">{tr.subtitle}</p>
           <SocialLinks className="mt-2.5" />
         </div>
       </header>

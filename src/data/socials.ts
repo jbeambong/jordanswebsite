@@ -4,6 +4,7 @@ export type SocialId =
   | "youtube"
   | "facebook"
   | "linkedin"
+  | "github"
   | "substack"
   | "spotify";
 
@@ -27,12 +28,17 @@ export const socials: Social[] = [
   {
     id: "youtube",
     label: "YouTube",
-    url: "https://www.youtube.com/watch?v=irlXSjnPzkE",
+    url: "https://www.youtube.com/@jordanbeambong",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/jordanbeambong/",
+  },
+  {
+    id: "github",
+    label: "GitHub",
+    url: "https://github.com/jbeambong",
   },
   {
     id: "substack",
