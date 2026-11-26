@@ -30,6 +30,16 @@ import talentsPhoto7Asset from "@/assets/talents/FinaleTDD2026-11.jpeg.asset.jso
 import talentsPhoto8Asset from "@/assets/talents/DSC08410_1.jpg.asset.json";
 import talentsPhoto9Asset from "@/assets/talents/DSC07957_2.jpg.asset.json";
 import talentsPhoto10Asset from "@/assets/talents/DSC01839_1.jpg.asset.json";
+import gamerHallPhoto1Asset from "@/assets/gamer-hall/DSC04169.JPG.asset.json";
+import gamerHallPhoto2Asset from "@/assets/gamer-hall/DSC04115.JPG.asset.json";
+import gamerHallPhoto3Asset from "@/assets/gamer-hall/DSC_0336.JPG.asset.json";
+import gamerHallPhoto4Asset from "@/assets/gamer-hall/DSC_0043.jpg.asset.json";
+import gamerHallPhoto5Asset from "@/assets/gamer-hall/10.png.asset.json";
+import gamerHallPhoto6Asset from "@/assets/gamer-hall/IMG_9403.JPG.asset.json";
+import gamerHallPhoto7Asset from "@/assets/gamer-hall/DSC_0305.jpg.asset.json";
+import gamerHallPhoto8Asset from "@/assets/gamer-hall/7W9A0054.JPG.asset.json";
+import gamerHallPhoto9Asset from "@/assets/gamer-hall/IMG-20200917-WA0035.jpg.asset.json";
+import gamerHallPhoto10Asset from "@/assets/gamer-hall/20200926_201206.jpg.asset.json";
 
 const talentsImg = talentsAsset.url;
 const talentsGallery = [
@@ -48,6 +58,18 @@ const roadHaitiImg = roadHaitiAsset.url;
 const urbanRoadsCameroonImg = urbanRoadsCameroonAsset.url;
 const atelierNoirImg = atelierNoirAsset.url;
 const gamerHallImg = gamerHallAsset.url;
+const gamerHallGallery = [
+  gamerHallPhoto1Asset.url,
+  gamerHallPhoto2Asset.url,
+  gamerHallPhoto3Asset.url,
+  gamerHallPhoto4Asset.url,
+  gamerHallPhoto5Asset.url,
+  gamerHallPhoto6Asset.url,
+  gamerHallPhoto7Asset.url,
+  gamerHallPhoto8Asset.url,
+  gamerHallPhoto9Asset.url,
+  gamerHallPhoto10Asset.url,
+];
 const dashboardMarketingImg = dashboardMarketingAsset.url;
 const fete1erMaiImg = fete1erMaiAsset.url;
 const welcomeFestImg = welcomeFestAsset.url;
@@ -539,24 +561,26 @@ export const t = {
         title: "The Gamer Hall",
         category: "esport",
         image: gamerHallImg,
+        gallery: gamerHallGallery,
+        youtubeId: "TcQSzBCX0g0",
         summary:
-          "A video gaming lounge and esports community space I founded and launched in Yaoundé, Cameroon.",
+          "My first major self-funded entrepreneurial venture: a gaming lounge and esports hub built from scratch in Yaoundé, Cameroon.",
         meta: {
           role: "Founder",
           organization: "The Gamer Hall",
           period: "Yaoundé, Cameroon",
         },
         highlights: [
-          { value: "Yaoundé", label: "Physical gaming lounge launched from scratch" },
-          { value: "Esport", label: "Local tournaments & community hub" },
-          { value: "End-to-end", label: "Business plan, setup, operations & marketing" },
+          { value: "100% self-funded", label: "First major entrepreneurial venture" },
+          { value: "~10 people", label: "Team managed across lounge & esports" },
+          { value: "1 year", label: "Full-cycle launch, operations & lessons" },
         ],
         challenge:
-          "Competitive gaming and console culture were growing rapidly in Cameroon, yet players lacked a dedicated, high-quality venue to play, compete, and socialize.",
+          "I have been immersed in video games since I was six years old, and I strongly believe in the potential of esports in Africa: it does not require massive capital to start, and there are genuinely talented players who can compete internationally if given the right environment. At the time, existing gaming rooms in Cameroon were poorly kept and almost exclusively frequented by boys. I invested my own funds with two clear ambitions: build the finest dedicated gaming lounge in Cameroon, and form the country's most competitive national esports team—inside an inclusive hub where women felt just as welcome to play and compete.",
         approach:
-          "I designed the venue concept, sourced hardware and equipment, set up daily operations, and built local awareness through tournaments and social media.",
+          "I built the entire project from A to Z. I imagined the logo and the venue's art direction, sourced and purchased every console and controller myself, found the premises, and coordinated subcontractors over two months to overhaul electricity, security, and cleaning. I handled all administrative paperwork, recruited and paid a team of around 10 people out of pocket covering both the gaming lounge and the esports roster, and launched the venue.",
         impact:
-          "The Gamer Hall became a local gathering spot for gamers in Yaoundé and a hands-on entrepreneurial experience in retail and community building.",
+          "After one year of operation, the venture was a commercial failure—we never managed to break even on our costs. Still, it remains a deeply formative experience: managing a 10-person team end-to-end, navigating Cameroon's economic and business environment firsthand, and learning what it really takes to launch and run a physical business from scratch.",
         link: "https://www.facebook.com/thegamerhall/photos?locale=fr_FR",
       },
       {
@@ -1075,24 +1099,26 @@ export const t = {
         title: "The Gamer Hall",
         category: "esport",
         image: gamerHallImg,
+        gallery: gamerHallGallery,
+        youtubeId: "TcQSzBCX0g0",
         summary:
-          "Une salle de jeu vidéo et un lieu communautaire esport que j'ai fondé et lancé à Yaoundé, au Cameroun.",
+          "Mon premier gros projet entrepreneurial financé sur fonds propres : une salle de jeu vidéo et un hub esport montés de A à Z à Yaoundé, au Cameroun.",
         meta: {
           role: "Fondateur",
           organization: "The Gamer Hall",
           period: "Yaoundé, Cameroun",
         },
         highlights: [
-          { value: "Yaoundé", label: "Salle de jeu lancée de zéro" },
-          { value: "Esport", label: "Tournois locaux & vie communautaire" },
-          { value: "De A à Z", label: "Business plan, aménagement & marketing" },
+          { value: "Fonds propres", label: "Premier gros projet entrepreneurial" },
+          { value: "~10 personnes", label: "Équipe managée (salle & esport)" },
+          { value: "1 an", label: "Lancement, exploitation & apprentissages" },
         ],
         challenge:
-          "La culture gaming et esport connaissait un fort essor au Cameroun, mais les joueurs manquaient d'un espace dédié, qualitatif et convivial pour jouer et s'affronter.",
+          "Passionné de jeu vidéo depuis l'âge de six ans, je crois profondément au potentiel de l'esport en Afrique : ce n'est pas un projet hors de prix à lancer, et il existe des joueurs très forts capables de briller à l'international si on leur en donne les moyens. À l'époque, les salles existantes au Cameroun étaient assez sales et fréquentées presque uniquement par des garçons. J'ai investi sur mes fonds propres avec deux objectifs : créer la plus belle salle dédiée aux jeux vidéo du Cameroun et bâtir l'équipe d'esport nationale la plus compétitive, au sein d'un hub accessible à tous et ouvert aux femmes, y compris sur le volet compétitif.",
         approach:
-          "J'ai conçu le concept du lieu, sourcé le matériel, structuré les opérations quotidiennes et animé la communauté locale via des tournois et les réseaux sociaux.",
+          "J'ai monté le projet de A à Z : conception du logo, direction artistique de la salle, achat de l'ensemble des consoles et manettes, recherche du local et rénovation complète en deux mois avec des sous-traitants (électricité, sécurité, nettoyage). J'ai géré toutes les démarches administratives, recruté et rémunéré sur fonds propres une équipe d'environ 10 personnes pour faire tourner la salle de jeux et la structure esport, puis ouvert l'activité.",
         impact:
-          "The Gamer Hall est devenu un point de rendez-vous pour les passionnés de jeu vidéo à Yaoundé et une expérience entrepreneuriale concrète de bout en bout.",
+          "Au bout d'un an d'activité, l'aventure s'est soldée par un échec commercial : nous n'avons jamais réussi à rentrer dans nos coûts. Cela reste néanmoins une expérience extrêmement enrichissante sur la réalité économique et l'environnement business au Cameroun, ainsi que sur le management d'une équipe de dix personnes.",
         link: "https://www.facebook.com/thegamerhall/photos?locale=fr_FR",
       },
       {

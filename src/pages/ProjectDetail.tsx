@@ -177,7 +177,7 @@ const ProjectDetail = () => {
           <section>
             <div className="aspect-video w-full overflow-hidden rounded-2xl bg-muted shadow-[var(--shadow-soft)]">
               <iframe
-                src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1&mute=1&playsinline=1`}
                 title={project.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -195,7 +195,7 @@ const ProjectDetail = () => {
                 className="aspect-video w-full overflow-hidden rounded-2xl bg-muted shadow-[var(--shadow-soft)]"
               >
                 <iframe
-                  src={`https://www.youtube.com/embed/${id}`}
+                  src={`https://www.youtube.com/embed/${id}?autoplay=1&mute=1&playsinline=1`}
                   title={`${project.title} — ${idx + 1}`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
