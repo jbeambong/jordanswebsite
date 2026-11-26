@@ -186,23 +186,23 @@ export const t = {
         category: "marketing",
         image: studelyTiktokImg,
         summary:
-          "Scaled Studely's TikTok from 2,000 to 55,000 followers (+2,650%) and turned short-form video into a daily inbound acquisition engine generating 50+ direct messages a day.",
+          "Grew Studely's TikTok from 2,000 to 56,000 followers in one year, generated tens of millions of impressions, and built an organic channel attracting nearly 100 DMs and comments every day.",
         meta: {
           role: "Growth Marketing Manager",
           organization: "Studely",
           period: "2025 – 2026",
         },
         highlights: [
-          { value: "2k → 55k", label: "TikTok followers (+2,650%)" },
-          { value: "50+ / day", label: "Inbound direct messages generated" },
-          { value: "100% organic", label: "Audience built through social-native formats" },
+          { value: "2k → 56k", label: "TikTok followers in one year" },
+          { value: "Tens of millions", label: "Organic impressions generated" },
+          { value: "~100 / day", label: "Inbound DMs and comments" },
         ],
         challenge:
-          "When I joined Studely in January 2025, TikTok sat at 2,000 followers with stiff corporate content that didn't resonate with international students preparing their move to France.",
+          "TikTok is an exceptional awareness channel: even if its golden age of effortless reach is over, the results can still be remarkable for a B2C brand addressing more than 1 billion people worldwide. Before investing, we asked ourselves two questions. Did we need to be there? Yes: our students already spend time on TikTok, Instagram and Facebook, and stronger organic awareness could reduce our reliance on paid advertising. Did we have the resources to do it properly? Our team was very small, so we deliberately prioritized TikTok and Facebook, where we expected the fastest return on our awareness goal.",
         approach:
-          "I shifted the editorial line to a more social, relatable tone: student-focused hooks, practical visa and life-in-France tips, behind-the-scenes moments, and fast iteration on formats that triggered comments and DMs.",
+          "We made one non-negotiable rule: never sponsor our posts. In my view, paid boosting creates artificial numbers—followers who did not choose the brand, rarely interact and dilute the quality of the audience. Instead, we published almost every day and tested trends, face-cam videos, tutorials and promotional formats. We worked with African content creators as brand ambassadors, but relied above all on employee-led content. Without an external agency, our own team learned to write, perform, stage and film content. It took role-playing, organization and new production skills. We then doubled down on what worked and cut what did not.",
         impact:
-          "The account grew by 2,650% to 55,000 followers and became a major organic acquisition channel, driving 50+ qualified inbound messages every day directly to the team.",
+          "The early numbers were modest, but consistency compounded. In one year, the account grew from 2,000 to 56,000 followers, generated tens of millions of impressions and became Studely's most powerful social channel and its leading source of inbound conversations, with nearly 100 DMs and comments arriving daily—entirely organically.",
       },
       {
         slug: "studely-facebook-organic",
@@ -210,7 +210,7 @@ export const t = {
         category: "marketing",
         image: studelyFacebookImg,
         summary:
-          "Grew Studely's Facebook community from 60,000 to 105,000 purely organic followers (+75%) by replacing corporate announcements with content people actually want to consume.",
+          "Grew Studely's Facebook community from 60,000 to 105,000 followers without paid ads by making the content more social, more useful and closer to what students actually consume.",
         meta: {
           role: "Growth Marketing Manager",
           organization: "Studely",
@@ -219,14 +219,14 @@ export const t = {
         highlights: [
           { value: "60k → 105k", label: "Facebook followers (+75%)" },
           { value: "€0 ad spend", label: "Purely organic community growth" },
-          { value: "+45k fans", label: "Net new followers added in under 20 months" },
+          { value: "Almost 2 / day", label: "Publishing frequency reached" },
         ],
         challenge:
-          "Facebook was already a key channel for Studely's audience in francophone Africa, but growth had plateaued around 60,000 followers with overly corporate posts that generated little conversation.",
+          "When I joined the team, Studely's Facebook page already had around 60,000 followers. There was some engagement, but nothing exceptional. The content felt corporate rather than native to social media, and growth had slowed. The opportunity was not to shout louder about the company: it was to turn the page into a destination students would genuinely want to follow, while keeping acquisition entirely organic.",
         approach:
-          "I overhauled the content policy to prioritize utility, cultural resonance, and community engagement—turning the page into a lively, helpful hub rather than a corporate bulletin board.",
+          "We made the editorial line more social and less corporate, modeling it on the content students already enjoyed. Short, vertical videos replaced many landscape formats. We increased practical and informational content—tips, useful articles and face-cam explanations—and raised our publishing rhythm to almost two posts a day. We also diversified the media mix with podcasts, then clipped their most interesting moments into highly relatable Facebook videos. Each format served the same goal: make the page useful, human and worth coming back to.",
         impact:
-          "Added 45,000 purely organic followers (+75%), reaching 105,000 fans without paid promotion and strengthening everyday brand presence with prospective students and parents.",
+          "The page gained 45,000 organic followers, growing from 60,000 to 105,000 (+75%) without spending a cent on ads. Beyond the audience growth, Studely built a much more engaging content engine that strengthened its everyday presence with prospective students and their parents.",
       },
       {
         slug: "studely-website-rebuild",
@@ -234,7 +234,7 @@ export const t = {
         category: "software",
         image: studelyWebsiteImg,
         summary:
-          "Replaced a slow, expensive, desktop-bound website with a fast, mobile-first platform—cutting bounce rate from 60% to 38% while doubling annual visitors from 1M to 2.1M.",
+          "Led Studely's migration from a costly custom-coded website to Webflow, giving marketing direct control, fixing the mobile experience and doubling annual traffic from 1M to 2.1M visitors.",
         meta: {
           role: "Growth Marketing Manager & Project Lead",
           organization: "Studely",
@@ -243,14 +243,14 @@ export const t = {
         highlights: [
           { value: "1M → 2.1M", label: "Annual website visitors" },
           { value: "60% → 38%", label: "Bounce rate reduction" },
-          { value: "Mobile-first", label: "Faster performance & lower running costs" },
+          { value: "2 months", label: "From migration kickoff to Webflow launch" },
         ],
         challenge:
-          "Studely's legacy website was slow, costly to maintain, and poorly adapted to mobile browsing—a major friction point for an international student audience mostly browsing on phones.",
+          "Studely had chosen to code its website from scratch rather than use a CMS. For a very small team, that meant relying daily on a developer, a webmaster and a designer for mockups and page changes. Even minor edits could take a week or more—far too slow for a startup. The blog was hosted on Contentful, where high traffic pushed the bill to nearly €700–800 per month. On top of that, many hand-coded pages were ugly or unusable on mobile, even though more than 90% of our prospects used only their phones.",
         approach:
-          "I led the rebuild around speed, mobile ergonomics, clear conversion paths, and a leaner stack that reduced maintenance costs while giving the marketing team full agility to ship pages.",
+          "I proposed migrating to Webflow, the CMS that best matched the site's requirements, and defended the business case to management. Once approved, I sourced the developer and led a migration that took roughly two months. We rebuilt the experience around mobile ergonomics, speed and clear conversion paths. Just as importantly, we created reusable design templates so the team would not have to reinvent the wheel for every page, and gave marketing direct control over everyday edits instead of routing each request through several specialists.",
         impact:
-          "Bounce rate dropped from 60% to 38%, annual traffic more than doubled from 1 million (2024) to 2.1 million visitors (2025), and operating costs fell significantly.",
+          "The new site removed a major operational bottleneck and reduced running costs while giving the marketing team real autonomy. Bounce rate dropped from 60% to 38%, and annual traffic more than doubled from 1 million visitors in 2024 to 2.1 million in 2025—supported by a faster, mobile-first experience.",
       },
       {
         slug: "studely-ai-blog-engine",
@@ -327,24 +327,25 @@ export const t = {
         title: "Studely Welcome Fest",
         category: "events",
         image: welcomeFestImg,
+        youtubeId: "xb1-ZIIf978",
         summary:
-          "An annual welcome festival designed to help newly arrived international students settle in France, build their network, and connect with Studely's partner ecosystem.",
+          "A welcome evening for around 120 international students, designed to help them settle in France, meet other students and connect with Studely's partner ecosystem.",
         meta: {
-          role: "Event Organizer & Growth Marketing Manager",
+          role: "Event Lead & Growth Marketing Manager",
           organization: "Studely",
           period: "2025",
         },
         highlights: [
-          { value: "100+", label: "International students in attendance" },
-          { value: "Multi-partner", label: "Stands, talks & practical workshops" },
-          { value: "High NPS", label: "Strong community engagement & word of mouth" },
+          { value: "~120", label: "Guests welcomed at the event" },
+          { value: "15", label: "Team members recruited and supervised" },
+          { value: "360°", label: "Venue, catering, invitations & entertainment" },
         ],
         challenge:
-          "Arriving in a new country for higher education can be overwhelming. Studely wanted to turn the back-to-school period into a warm, memorable physical touchpoint that went beyond digital onboarding.",
+          "Arriving in a new country for higher education can be overwhelming. Studely wanted to turn the back-to-school period into a warm, memorable evening that went beyond digital onboarding and helped newly arrived international students build their first connections in France.",
         approach:
-          "I led the organization of the Welcome Fest in Paris—coordinating venue logistics, partner activations, registration funnels, social media promotion, and on-site student experience with a team of 9.",
+          "I supervised the entire event from start to finish. I recruited and coordinated the 15-person team, led the search for both the venue and the caterer, managed invitations and planned the entertainment. I also oversaw the guest experience and on-site logistics, making sure every part of the evening worked together.",
         impact:
-          "Over 100 students attended the event, creating authentic community bonds, generating user-created content across TikTok and Instagram, and boosting brand affinity at a pivotal moment in the student journey.",
+          "Around 120 people attended the Welcome Fest. The evening created authentic connections between students, generated organic content across social media and strengthened Studely's brand affinity at a pivotal moment in the student journey. The video below captures the final atmosphere of the event.",
       },
       {
         slug: "talents-of-tomorrow",
@@ -739,23 +740,23 @@ export const t = {
         category: "marketing",
         image: studelyTiktokImg,
         summary:
-          "Fait passer le compte TikTok de Studely de 2 000 à 55 000 abonnés (+2 650 %) et transformé la vidéo courte en moteur d'acquisition générant plus de 50 messages entrants par jour.",
+          "Fait passer le compte TikTok de Studely de 2 000 à 56 000 abonnés en un an, généré des dizaines de millions d'impressions et construit un canal organique attirant près de 100 messages privés et commentaires chaque jour.",
         meta: {
           role: "Growth Marketing Manager",
           organization: "Studely",
           period: "2025 – 2026",
         },
         highlights: [
-          { value: "2k → 55k", label: "Abonnés TikTok (+2 650 %)" },
-          { value: "50+ / jour", label: "Messages directs entrants générés" },
-          { value: "100 % organique", label: "Audience bâtie par des formats natifs" },
+          { value: "2k → 56k", label: "Abonnés TikTok gagnés en un an" },
+          { value: "Des dizaines de millions", label: "Impressions organiques générées" },
+          { value: "Près de 100 / jour", label: "Messages privés et commentaires reçus" },
         ],
         challenge:
-          "À mon arrivée chez Studely en janvier 2025, le compte TikTok plafonnait à 2 000 abonnés avec un contenu trop corporate qui ne parlait pas aux étudiants internationaux préparant leur arrivée en France.",
+          "TikTok est un réseau redoutable pour la notoriété : même si la période dorée de la portée facile est terminée, les résultats peuvent encore être spectaculaires pour une marque B2C qui s'adresse à plus d'un milliard de personnes dans le monde. Avant de nous lancer, nous devions répondre à deux questions. Était-ce vraiment nécessaire ? Oui : nos étudiants sont bien présents sur TikTok, Instagram et Facebook, et une meilleure notoriété organique pouvait réduire notre dépendance à la publicité payante. Avions-nous la force de frappe ? Notre équipe était très réduite : nous avons donc choisi de prioriser TikTok et Facebook, où nous espérions un retour plus rapide sur notre objectif de notoriété.",
         approach:
-          "J'ai basculé la ligne éditoriale vers un ton plus « social » et incarné : accroches pensées pour les étudiants, conseils pratiques sur le visa et la vie en France, coulisses et itérations rapides sur les formats qui déclenchent les échanges.",
+          "Nous avons posé une règle non négociable : ne jamais sponsoriser nos publications. À mes yeux, le boosting crée des chiffres artificiels — des abonnés qui n'ont pas vraiment choisi la marque, n'interagissent pas et diluent la qualité de l'audience. À la place, nous avons publié presque tous les jours et testé les trends, les face cams, les tutoriels et les vidéos promotionnelles. Nous avons collaboré avec des créateurs de contenu africains devenus ambassadeurs, mais surtout misé sur l'employee-led content. Sans agence externe, les employés ont eux-mêmes écrit, joué, mis en scène et filmé les contenus. Cela a demandé du jeu de rôle, de l'organisation et de nouvelles compétences de captation. Nous avons ensuite gardé ce qui fonctionnait et abandonné le reste.",
         impact:
-          "Le compte a bondi de +2 650 % jusqu'à 55 000 abonnés et est devenu un canal d'acquisition organique majeur, générant plus de 50 messages entrants qualifiés chaque jour.",
+          "Les premiers chiffres n'étaient pas glorieux, mais ce travail de longue haleine a fini par payer. En un an, le compte est passé de 2 000 à 56 000 abonnés, a généré des dizaines de millions d'impressions et est devenu le réseau le plus puissant de Studely ainsi que son premier canal de conversations entrantes, avec près de 100 messages privés et commentaires reçus chaque jour — le tout en 100 % organique.",
       },
       {
         slug: "studely-facebook-organic",
@@ -763,7 +764,7 @@ export const t = {
         category: "marketing",
         image: studelyFacebookImg,
         summary:
-          "Fait grandir la communauté Facebook de Studely de 60 000 à 105 000 abonnés 100 % organiques (+75 %) en remplaçant les annonces corporate par du contenu que l'on a vraiment envie de consommer.",
+          "Fait grandir la communauté Facebook de Studely de 60 000 à 105 000 abonnés sans publicité en rendant les contenus plus sociaux, plus utiles et plus proches de ce que les étudiants consomment réellement.",
         meta: {
           role: "Growth Marketing Manager",
           organization: "Studely",
@@ -772,14 +773,14 @@ export const t = {
         highlights: [
           { value: "60k → 105k", label: "Abonnés Facebook (+75 %)" },
           { value: "0 € en pub", label: "Croissance 100 % organique" },
-          { value: "+45k fans", label: "Nouveaux abonnés gagnés en moins de 20 mois" },
+          { value: "Près de 2 / jour", label: "Rythme de publication atteint" },
         ],
         challenge:
-          "Facebook était déjà un canal clé pour l'audience de Studely en Afrique francophone, mais la page stagnait autour de 60 000 abonnés avec des publications trop institutionnelles qui suscitaient peu d'engagement.",
+          "À mon arrivée dans l'équipe, la page Facebook de Studely comptait environ 60 000 abonnés. Il y avait de l'engagement, mais sans plus. Les contenus restaient trop corporate et peu adaptés aux usages des réseaux sociaux, et la croissance marquait le pas. L'enjeu n'était pas de parler plus fort de l'entreprise : il était de faire de la page un rendez-vous que les étudiants auraient vraiment envie de suivre, tout en gardant une acquisition 100 % organique.",
         approach:
-          "J'ai refondu la politique éditoriale pour privilégier l'utilité, la proximité culturelle et la conversation — transformant la page en véritable communauté active plutôt qu'en vitrine corporate.",
+          "Nous avons rendu la ligne éditoriale plus sociale et moins corporate, en nous inspirant des contenus que les étudiants appréciaient déjà. Les vidéos courtes et verticales ont remplacé une partie des formats paysage. Nous avons renforcé les contenus informationnels et pratiques — conseils, articles utiles et explications en face cam — puis augmenté la fréquence jusqu'à presque deux publications par jour. Nous avons aussi diversifié notre stratégie média avec des podcasts, dont nous découpions les passages les plus intéressants pour créer des vidéos Facebook plus parlantes. Chaque format poursuivait le même objectif : rendre la page utile, humaine et digne d'intérêt.",
         impact:
-          "45 000 abonnés gagnés de manière purement organique (+75 %), portant la page à 105 000 fans sans budget publicitaire et renforçant durablement la présence de marque auprès des étudiants et de leurs parents.",
+          "La page a gagné 45 000 abonnés organiques, passant de 60 000 à 105 000 (+75 %) sans dépenser un centime en publicité. Au-delà de la croissance d'audience, Studely s'est doté d'un moteur de contenu beaucoup plus engageant, renforçant sa présence quotidienne auprès des étudiants potentiels et de leurs parents.",
       },
       {
         slug: "studely-website-rebuild",
@@ -787,7 +788,7 @@ export const t = {
         category: "software",
         image: studelyWebsiteImg,
         summary:
-          "Remplacé un site lent, coûteux et inadapté au mobile par une plateforme rapide et mobile-first — réduisant le taux de rebond de 60 % à 38 % tout en doublant le trafic annuel de 1 M à 2,1 M de visiteurs.",
+          "Piloté la migration du site Studely, codé sur mesure et coûteux, vers Webflow : marketing autonome, expérience mobile repensée et trafic annuel doublé de 1 M à 2,1 M de visiteurs.",
         meta: {
           role: "Growth Marketing Manager & Chef de Projet",
           organization: "Studely",
@@ -796,14 +797,14 @@ export const t = {
         highlights: [
           { value: "1 M → 2,1 M", label: "Visiteurs annuels sur le site" },
           { value: "60 % → 38 %", label: "Baisse du taux de rebond" },
-          { value: "Mobile-first", label: "Plus rapide et moins coûteux à maintenir" },
+          { value: "2 mois", label: "Pour mener la migration vers Webflow" },
         ],
         challenge:
-          "L'ancien site de Studely était lent, extrêmement cher à maintenir et totalement inadapté à la navigation mobile — un frein majeur pour une audience étudiante internationale majoritairement sur smartphone.",
+          "Studely avait choisi de coder son site de zéro plutôt que d'utiliser un CMS. Pour une équipe très réduite, cela impliquait de dépendre quotidiennement d'un développeur, d'un webmaster et d'un graphiste pour les maquettes et les modifications de pages. Même un petit changement pouvait prendre une semaine ou plus — bien trop lent pour une startup. Le blog était hébergé sur Contentful, où le fort trafic faisait grimper la facture à près de 700–800 € par mois. Enfin, de nombreuses pages codées à la main étaient laides ou inutilisables sur mobile, alors que plus de 90 % de nos prospects utilisaient uniquement leur téléphone.",
         approach:
-          "J'ai piloté la refonte autour de la vitesse, de l'ergonomie mobile, de parcours de conversion limpides et d'une architecture plus légère permettant de réduire les coûts tout en gagnant en agilité.",
+          "J'ai proposé de migrer vers Webflow, le CMS qui répondait le mieux aux exigences du site, puis défendu ce projet auprès de la direction. Après validation, j'ai trouvé le développeur et piloté une migration d'environ deux mois. Nous avons repensé l'expérience autour de l'ergonomie mobile, de la vitesse et de parcours de conversion clairs. Surtout, nous avons créé des templates réutilisables pour ne pas réinventer la roue à chaque page, et donné au marketing la main directement sur les modifications courantes plutôt que de faire transiter chaque demande par plusieurs spécialistes.",
         impact:
-          "Le taux de rebond est passé de 60 % à 38 %, le trafic annuel a plus que doublé (de 1 million en 2024 à 2,1 millions en 2025) et les coûts d'exploitation ont nettement diminué.",
+          "Le nouveau site a supprimé un important goulot d'étranglement opérationnel, réduit les coûts de fonctionnement et donné une réelle autonomie à l'équipe marketing. Le taux de rebond est passé de 60 % à 38 %, tandis que le trafic annuel a plus que doublé, de 1 million de visiteurs en 2024 à 2,1 millions en 2025, porté par une expérience plus rapide et pensée pour le mobile.",
       },
       {
         slug: "studely-ai-blog-engine",
@@ -880,24 +881,25 @@ export const t = {
         title: "Welcome Fest Studely",
         category: "events",
         image: welcomeFestImg,
+        youtubeId: "xb1-ZIIf978",
         summary:
-          "Un festival de rentrée conçu pour accueillir les étudiants internationaux fraîchement arrivés en France, faciliter leur intégration et les connecter à l'écosystème Studely.",
+          "Une soirée d'accueil réunissant environ 120 étudiants internationaux pour faciliter leur arrivée en France, créer des liens et les connecter à l'écosystème Studely.",
         meta: {
-          role: "Organisateur & Responsable Growth Marketing",
+          role: "Responsable Événement & Growth Marketing",
           organization: "Studely",
           period: "2025",
         },
         highlights: [
-          { value: "100+", label: "Étudiants internationaux présents" },
-          { value: "Multi-partenaires", label: "Stands, prises de parole & ateliers pratiques" },
-          { value: "Fort engagement", label: "Création de contenu & bouche-à-oreille" },
+          { value: "Environ 120", label: "Personnes accueillies à la soirée" },
+          { value: "15", label: "Membres d'équipe recrutés et supervisés" },
+          { value: "360°", label: "Lieu, traiteur, invitations & animations" },
         ],
         challenge:
-          "Arriver dans un nouveau pays pour ses études est une étape intense. Studely souhaitait transformer la rentrée en un rendez-vous physique chaleureux et utile, au-delà de l'accompagnement digital.",
+          "Arriver dans un nouveau pays pour ses études est une étape intense. Studely souhaitait transformer la rentrée en une soirée chaleureuse et mémorable, au-delà de l'accompagnement digital, pour aider les étudiants internationaux fraîchement arrivés à créer leurs premiers liens en France.",
         approach:
-          "J'ai piloté l'organisation du Welcome Fest à Paris : logistique du lieu, activations partenaires, tunnel d'inscription, promotion sur les réseaux sociaux et expérience sur place avec une équipe de 9 personnes.",
+          "J'ai chapeauté l'intégralité de l'événement, du début à la fin. J'ai recruté et coordonné les 15 membres de l'équipe, mené la recherche du lieu et du traiteur, géré les invitations et organisé les animations. J'ai également supervisé l'expérience des invités et la logistique sur place, en veillant à ce que chaque partie de la soirée s'articule correctement.",
         impact:
-          "Plus de 100 étudiants ont participé à l'événement, créant de vrais liens communautaires, générant du contenu organique sur TikTok et Instagram et renforçant l'attachement à la marque dès le début du parcours étudiant.",
+          "Environ 120 personnes ont participé au Welcome Fest. La soirée a créé de vrais liens entre les étudiants, généré du contenu organique sur les réseaux sociaux et renforcé l'attachement à la marque Studely à un moment clé du parcours étudiant. La vidéo ci-dessous montre l'ambiance finale de l'événement.",
       },
       {
         slug: "talents-of-tomorrow",

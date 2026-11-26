@@ -7,6 +7,7 @@ import { ChevronDown, Globe } from "lucide-react";
 import jordanPhoto from "@/assets/jordan-photo.png";
 import { CATEGORY_META, CategoryTag, type ProjectCategory } from "@/components/CategoryTag";
 import { SocialLinks } from "@/components/SocialLinks";
+import { ProjectPlatformBadge } from "@/components/ProjectPlatformBadge";
 
 const Index = () => {
   const { lang, toggleLang } = useLang();
@@ -164,7 +165,7 @@ const Index = () => {
               to={`/portfolio/${item.slug}`}
               className="group block text-left no-underline text-foreground hover:text-foreground rounded-2xl p-2 bg-card transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-ring shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-soft-hover)]"
             >
-              <div className="aspect-[3/2] w-full overflow-hidden rounded-xl bg-muted">
+              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl bg-muted">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -173,6 +174,7 @@ const Index = () => {
                   height={672}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <ProjectPlatformBadge slug={item.slug} />
               </div>
               <div className="px-1.5 pt-3 pb-1.5 space-y-2">
                 <div className="text-sm font-semibold leading-snug">{item.title}</div>
