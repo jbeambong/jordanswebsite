@@ -180,6 +180,25 @@ const ProjectDetail = () => {
             </div>
           </section>
         )}
+
+        {"youtubeIds" in project && project.youtubeIds && project.youtubeIds.length > 0 && (
+          <section className="space-y-6">
+            {project.youtubeIds.map((id, idx) => (
+              <div
+                key={id}
+                className="aspect-video w-full overflow-hidden rounded-2xl bg-muted shadow-[var(--shadow-soft)]"
+              >
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title={`${project.title} — ${idx + 1}`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full border-0"
+                />
+              </div>
+            ))}
+          </section>
+        )}
       </article>
 
       <hr className="mb-10" />

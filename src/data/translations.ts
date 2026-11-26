@@ -20,8 +20,30 @@ import studelyFacebookImg from "@/assets/portfolio/studely-facebook-organic.jpg"
 import studelyWebsiteImg from "@/assets/portfolio/studely-website-rebuild.jpg";
 import studelyAiBlogImg from "@/assets/portfolio/studely-ai-blog-engine.jpg";
 import studelyBrandImg from "@/assets/portfolio/studely-brand-turnaround.jpg";
+import talentsPhoto1Asset from "@/assets/talents/TDD1-DakarExpress-36_1.jpg.asset.json";
+import talentsPhoto2Asset from "@/assets/talents/TDD1-DakarExpress-28.jpg.asset.json";
+import talentsPhoto3Asset from "@/assets/talents/TDD1-DakarExpress-24.jpg.asset.json";
+import talentsPhoto4Asset from "@/assets/talents/TDD1-DakarExpress-12_2.jpg.asset.json";
+import talentsPhoto5Asset from "@/assets/talents/TDD1-DakarExpress-5.jpg.asset.json";
+import talentsPhoto6Asset from "@/assets/talents/FinaleTDD2026-32_1.jpg.asset.json";
+import talentsPhoto7Asset from "@/assets/talents/FinaleTDD2026-11.jpeg.asset.json";
+import talentsPhoto8Asset from "@/assets/talents/DSC08410_1.jpg.asset.json";
+import talentsPhoto9Asset from "@/assets/talents/DSC07957_2.jpg.asset.json";
+import talentsPhoto10Asset from "@/assets/talents/DSC01839_1.jpg.asset.json";
 
 const talentsImg = talentsAsset.url;
+const talentsGallery = [
+  talentsPhoto1Asset.url,
+  talentsPhoto2Asset.url,
+  talentsPhoto3Asset.url,
+  talentsPhoto4Asset.url,
+  talentsPhoto5Asset.url,
+  talentsPhoto6Asset.url,
+  talentsPhoto7Asset.url,
+  talentsPhoto8Asset.url,
+  talentsPhoto9Asset.url,
+  talentsPhoto10Asset.url,
+];
 const roadHaitiImg = roadHaitiAsset.url;
 const urbanRoadsCameroonImg = urbanRoadsCameroonAsset.url;
 const gamerHallImg = gamerHallAsset.url;
@@ -270,9 +292,9 @@ export const t = {
           { value: "In-house", label: "Custom editorial workflow built internally" },
         ],
         challenge:
-          "Studely had published zero blog articles in the previous two years, leaving massive organic search demand from international students completely untapped.",
+          "Competitors were far better ranked on search engines than Studely, largely thanks to their steady blog production. On our side, we were a lean team with no remaining time or bandwidth to write articles—blog publishing had been completely halted for over a year when the project started, leaving massive organic demand untapped.",
         approach:
-          "Instead of outsourcing at high agency rates, we built an in-house AI editorial generator tailored to Studely's topics, tone, and SEO structure—allowing the team to produce, review, and publish at scale.",
+          "Seeing how capable LLMs and workflow automations were becoming, I pitched management on building an internal system to win back ground on the topics and keywords where we were poorly ranked. I partnered with a developer to build not a generic script, but a sophisticated blog generator calibrated to Studely's tone of voice, style, and internal knowledge base to ensure high editorial quality at scale.",
         impact:
           "Over 200 articles went live, powering the surge in organic discovery and helping lift overall website traffic from 1 million to 2.1 million annual visitors.",
       },
@@ -282,7 +304,7 @@ export const t = {
         category: "marketing",
         image: studelyBrandImg,
         summary:
-          "Transformed Studely from a utilitarian service provider into a loved brand—growing social impressions 10×, lifting customer ratings, and driving +51% in blocked accounts sold.",
+          "Transformed Studely from a utilitarian service provider into a loved brand—growing social impressions 10×, cutting ad spend in half while sustaining sales, and driving +51% in blocked accounts sold.",
         meta: {
           role: "Growth Marketing Manager",
           organization: "Studely",
@@ -294,11 +316,11 @@ export const t = {
           { value: "4.4★ / 3.9★", label: "Google (4→4.4) & Trustpilot (3.1→3.9)" },
         ],
         challenge:
-          "Studely was perceived as just another administrative service provider, with mixed store reviews (4.0 on Google, 3.1 on Trustpilot), corporate communication, and an 11% conversion rate.",
+          "Studely operated in an increasingly crowded market, with more and more blocked-account providers targeting France and eroding our market share—a pressure that also led us to expand into Germany and Belgium. Because we delivered a premium service with far more benefits than a bare blocked account, entering a price war would have been fatal. We needed to stand out beyond product specs and overcome corporate communication, mixed reviews (4.0 on Google, 3.1 on Trustpilot), and an 11% conversion rate.",
         approach:
-          "I combined a human, social-first content strategy, flagship community events (Talents de Demain, 10-year Gala, Welcome Fest), a rebuilt website, and active customer-review management to elevate every touchpoint of the brand.",
+          "We shifted from product-first messaging to an emotional positioning: becoming the ultimate guide and advocate for international students, fighting for them before and after arrival in France. On social media, we dropped the corporate polish for content built for our 18–25 core audience—short vertical formats, authentic smartphone-shot videos, tutorials, and trends. We revived TikTok from scratch, reactivated our podcasts, and launched high-emotion initiatives like Talents of Tomorrow (awarding €20,000 scholarships to three African students for their first year in Europe), alongside flagship events (10-year Gala, Welcome Fest) and active review management.",
         impact:
-          "Social impressions jumped from 1.2M to 11.8M, Google reviews climbed to 4.4 and Trustpilot to 3.9, conversion rose from 11% to 19%, and blocked accounts sold grew from 6k to 9.1k (+51%).",
+          "Studely became a brand people genuinely love and recognize. Social impressions jumped from 1.2M to 11.8M, Google reviews climbed to 4.4 and Trustpilot to 3.9, conversion rose from 11% to 19%, and blocked accounts sold grew from 6k to 9.1k (+51%). We cut our paid ad spend in half compared to the previous year while achieving at least the same sales volume—proving the brand strategy paid off.",
       },
       {
         slug: "gala-10-ans-studely",
@@ -318,7 +340,7 @@ export const t = {
         challenge:
           "Marking ten years of growth required more than a standard corporate reception. Studely needed a flagship moment that honored its history, strengthened ties with key institutional and banking partners, and projected its vision for the next decade.",
         approach:
-          "I coordinated the event from concept to execution: venue selection, editorial run-of-show, partner and VIP invitations, stage storytelling, branding assets, and on-site logistics with the marketing team and external vendors.",
+          "I coordinated the event from concept to execution: I booked a reception room at Hôtel d'Évreux on Place Vendôme—one of the most prestigious squares in Paris—and selected Potel & Chabot as caterer. I also led the editorial run-of-show, partner and VIP invitations, stage storytelling, branding assets, and on-site logistics with the marketing team and external vendors.",
         impact:
           "The gala reinforced Studely's positioning as a reference player in international student mobility, generated strong organic coverage across social channels, and deepened relationships with strategic partners.",
       },
@@ -352,6 +374,8 @@ export const t = {
         title: "Talents of Tomorrow",
         category: "events",
         image: talentsImg,
+        gallery: talentsGallery,
+        youtubeIds: ["rlR0aXiRpj8", "HBqECdBIoX0"],
         summary:
           "A scholarship competition I co-created to award up to €20,000 in funding to three outstanding African students for their first year of studies in France.",
         meta: {
@@ -360,16 +384,16 @@ export const t = {
           period: "2025",
         },
         highlights: [
-          { value: "€20,000", label: "Funding awarded to winning students" },
-          { value: "3 laureates", label: "Selected through a multi-stage competition" },
-          { value: "360°", label: "Selection, exam design & event logistics" },
+          { value: "300% ROI", label: "Return on a budget under €250,000" },
+          { value: "€20,000 × 3", label: "Scholarships awarded to winning students" },
+          { value: "~8 people", label: "Core team executing the program end-to-end" },
         ],
         challenge:
           "Talented African students often face steep financial barriers when pursuing higher education in France. We wanted to design a merit-based, transparent, and inspiring initiative with real life-changing impact.",
         approach:
-          "I co-created the competition format and managed every operational layer: application campaign, candidate screening, written and oral exam design, jury coordination, and awards ceremony logistics.",
+          "I co-created the competition with Gatien, Studely's CMO, and our team of around eight people executed the entire project end-to-end: building the program timeline, designing and running every candidate challenge, shortlisting after each stage, producing video content to promote every milestone, and animating the competition's WhatsApp community. We also handled all logistics in-house—flights, visas, school authorizations, local bookings, filming permits, selecting executive video production, catering and transport vendors, on-site challenge production, and influencer management.",
         impact:
-          "The program attracted strong interest across the continent, rewarded three exceptional laureates, and became a signature pillar of Studely's social impact and brand storytelling.",
+          "Delivered on a budget just under €250,000, the program generated a 300% ROI, attracted massive engagement across the continent, rewarded three exceptional laureates, and became a signature pillar of Studely's social impact and brand storytelling.",
         link: "https://www.studely.com/fr/talents",
       },
       {
@@ -824,9 +848,9 @@ export const t = {
           { value: "Fait maison", label: "Chaîne éditoriale bâtie en interne" },
         ],
         challenge:
-          "Studely n'avait produit aucun article de blog au cours des deux années précédentes, laissant inexploité un énorme volume de recherches organiques d'étudiants internationaux.",
+          "La concurrence était nettement mieux référencée que Studely sur le web, notamment grâce à sa production régulière d'articles de blog. De notre côté, en équipe réduite, nous n'avions plus le temps ni la bande passante pour rédiger : la publication sur le blog était à l'arrêt depuis plus d'un an au lancement du projet, laissant inexploité un énorme volume de recherches organiques.",
         approach:
-          "Plutôt que d'externaliser à prix fort, nous avons construit un générateur éditorial IA en interne, calibré sur les thématiques, le ton et les exigences SEO de Studely pour produire et publier à grande échelle.",
+          "Voyant les progrès rapides des LLM et des automatisations, j'ai proposé à la direction de mettre en place un système interne pour regagner du terrain sur les thématiques et mots-clés où nous étions mal référencés. J'ai travaillé avec un développeur pour concevoir un générateur d'articles sophistiqué — loin d'un outil basique — intégrant le tone of voice de Studely, notre manière de parler et nos informations internes afin d'enrichir la qualité éditoriale de chaque article.",
         impact:
           "Plus de 200 articles mis en ligne, alimentant l'acquisition organique et contribuant à faire passer le trafic global du site de 1 million à 2,1 millions de visiteurs annuels.",
       },
@@ -836,7 +860,7 @@ export const t = {
         category: "marketing",
         image: studelyBrandImg,
         summary:
-          "Transformé l'image de Studely d'un simple prestataire administratif en une marque aimée — multipliant les impressions sociales par 10, redressant les avis clients et faisant grimper les ventes de +51 %.",
+          "Transformé l'image de Studely d'un simple prestataire administratif en une marque aimée — multipliant les impressions sociales par 10, divisant le budget pub par 2 à ventes égales et faisant grimper les comptes vendus de +51 %.",
         meta: {
           role: "Growth Marketing Manager",
           organization: "Studely",
@@ -848,11 +872,11 @@ export const t = {
           { value: "4,4★ / 3,9★", label: "Avis Google (4→4,4) & Trustpilot (3,1→3,9)" },
         ],
         challenge:
-          "Studely était perçu comme un prestataire parmi d'autres, avec une communication corporate, des avis clients mitigés (4,0 sur Google, 3,1 sur Trustpilot) et un taux de conversion de 11 %.",
+          "Studely évoluait dans un paysage de plus en plus concurrentiel : de nouveaux prestataires de comptes bloqués apparaissaient sur la France et grignotaient des parts de marché, ce qui nous a d'ailleurs poussés à ouvrir l'Allemagne et la Belgique. Livrant un service premium bien plus complet qu'un simple compte bloqué, nous refusions une guerre des prix qui aurait mené à notre perte. Il fallait nous distinguer autrement, malgré une communication corporate, des avis mitigés (4,0 sur Google, 3,1 sur Trustpilot) et une conversion à 11 %.",
         approach:
-          "J'ai articulé une refonte éditoriale plus humaine sur les réseaux, des événements phares (Talents de Demain, Gala des 10 ans, Welcome Fest), un nouveau site et un travail actif sur la satisfaction et les avis clients.",
+          "Nous avons choisi de toucher l'émotionnel plutôt que de ne parler que produit : positionner Studely comme le guide ultime et le défenseur de l'étudiant en mobilité, avant son départ comme après son arrivée en France. Sur les réseaux sociaux, nous avons rompu avec le ton corporate pour parler à notre cible 18-25 ans : formats courts verticaux, vidéos authentiques filmées au smartphone plutôt que des grosses productions léchées, tutoriels et trends. Nous avons relancé TikTok (alors un réseau mort), réactivé nos podcasts et lancé des opérations à forte charge émotionnelle comme Talents de Demain (trois bourses de 20 000 € pour aider trois étudiants africains à financer leur première année d'études en Europe), aux côtés d'événements phares (Gala des 10 ans, Welcome Fest) et d'un travail actif sur les avis clients.",
         impact:
-          "Les impressions sociales ont bondi de 1,2 M à 11,8 M, les notes Google et Trustpilot sont montées à 4,4 et 3,9, la conversion est passée de 11 % à 19 % et les comptes bloqués vendus ont progressé de 6k à 9,1k (+51 %).",
+          "Studely est devenue une marque qu'on aime et qu'on reconnaît. Les impressions sociales ont bondi de 1,2 M à 11,8 M, les notes Google et Trustpilot sont montées à 4,4 et 3,9, la conversion est passée de 11 % à 19 % et les comptes bloqués vendus ont progressé de 6k à 9,1k (+51 %). Surtout, nous avons divisé par deux nos dépenses en ads par rapport à l'année précédente tout en réalisant au moins les mêmes chiffres de vente — preuve directe que la stratégie de marque a payé.",
       },
       {
         slug: "gala-10-ans-studely",
@@ -872,7 +896,7 @@ export const t = {
         challenge:
           "Marquer dix années de croissance demandait bien plus qu'une simple réception. Studely avait besoin d'un moment fort pour honorer son histoire, consolider ses relations avec ses partenaires bancaires et institutionnels, et porter sa vision pour la décennie à venir.",
         approach:
-          "J'ai coordonné l'événement de la conception à l'exécution : choix du lieu, conducteur éditorial, invitations VIP et partenaires, mise en scène, supports de marque et logistique sur place avec l'équipe marketing et les prestataires.",
+          "J'ai coordonné l'événement de la conception à l'exécution : j'ai loué une salle à l'Hôtel d'Évreux, situé Place Vendôme — l'une des places les plus prestigieuses de Paris — et retenu le traiteur Potel & Chabot. J'ai également piloté le conducteur éditorial, les invitations VIP et partenaires, la mise en scène, les supports de marque et la logistique sur place avec l'équipe marketing et les prestataires.",
         impact:
           "Le gala a renforcé le positionnement de Studely comme acteur de référence de la mobilité étudiante internationale, généré de nombreuses retombées organiques sur les réseaux sociaux et consolidé les liens avec les partenaires clés.",
       },
@@ -906,6 +930,8 @@ export const t = {
         title: "Talents of Tomorrow",
         category: "events",
         image: talentsImg,
+        gallery: talentsGallery,
+        youtubeIds: ["rlR0aXiRpj8", "HBqECdBIoX0"],
         summary:
           "Un programme de bourse que j'ai co-créé sous forme de jeu-concours permettant à trois étudiants africains de recevoir jusqu'à 20 000 € pour leur première année d'études en France.",
         meta: {
@@ -914,16 +940,16 @@ export const t = {
           period: "2025",
         },
         highlights: [
-          { value: "20 000 €", label: "De financement attribué aux lauréats" },
-          { value: "3 lauréats", label: "Sélectionnés au terme d'un concours complet" },
-          { value: "360°", label: "Sélection, création des épreuves & logistique" },
+          { value: "300 % ROI", label: "Retour sur un budget sous les 250 000 €" },
+          { value: "20 000 € × 3", label: "Bourses attribuées aux lauréats" },
+          { value: "~8 personnes", label: "Équipe dédiée de bout en bout" },
         ],
         challenge:
           "De nombreux étudiants africains brillants se heurtent à des barrières financières pour étudier en France. L'objectif était de créer une initiative méritocratique, transparente et inspirante, avec un impact concret.",
         approach:
-          "J'ai co-créé le format du concours et géré l'ensemble des volets opérationnels : campagne de candidatures, présélection, conception des épreuves écrites et orales, coordination du jury et logistique de la remise des prix.",
+          "J'ai co-créé le projet avec Gatien, le CMO de Studely, et notre équipe d'environ huit personnes a tout piloté de bout en bout : calendrier du concours, conception et mise en place des épreuves, tris à la fin de chaque étape, réalisation des vidéos promotionnelles et community management pour animer le canal WhatsApp du concours. Nous avons aussi géré toute la logistique : billets d'avion, visas, autorisations pour les écoles, réservations sur place, autorisations de tournage, choix des prestataires (production exécutive vidéo, restauration, transport), réalisation des épreuves sur place et gestion des influenceurs.",
         impact:
-          "Le programme a suscité un fort engouement sur le continent, récompensé trois profils d'exception et s'est imposé comme un pilier de l'impact social et du rayonnement de Studely.",
+          "Réalisé avec un budget d'un peu moins de 250 000 €, le projet a généré un ROI de 300 %, suscité un fort engouement sur le continent, récompensé trois profils d'exception et s'est imposé comme un pilier de l'impact social et du rayonnement de Studely.",
         link: "https://www.studely.com/fr/talents",
       },
       {
